@@ -321,11 +321,7 @@ export default async function CategoryPage({ params }) {
                           ease-out
                           group-hover:scale-110
                         "
-                        sizes="
-                          (max-width: 640px) 50vw,
-                          (max-width: 1024px) 33vw,
-                          25vw
-                        "
+                        sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
                       />
 
                       {/* Arrow */}

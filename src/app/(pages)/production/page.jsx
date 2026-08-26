@@ -7,9 +7,14 @@ import { useEffect, useState } from "react";
 
 import "swiper/css";
 import "swiper/css/effect-fade";
+
 import Environmental_Sustainability from "@/sections/Environmental_Sustainability";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+
+/* =====================================================
+   PRODUCTION IMAGES
+===================================================== */
 
 const productionImages = [
   "/production/p1.jpg",
@@ -24,6 +29,10 @@ const productionImages = [
   "/production/p10.jpg",
 ];
 
+/* =====================================================
+   PAGE
+===================================================== */
+
 export default function Production() {
   const [client, setClient] = useState(false);
 
@@ -35,17 +44,23 @@ export default function Production() {
 
   return (
     <>
+      {/* =====================================================
+          PRODUCTION
+      ===================================================== */}
       <section
         id="production"
-        className="relative w-full overflow-hidden bg-white py-14 sm:py-16 md:py-20 lg:py-28"
+        className="relative w-full overflow-hidden bg-white py-12 sm:py-16 md:py-20 lg:py-24"
       >
         {/* Background Glow */}
         <div className="pointer-events-none absolute left-0 top-1/2 h-[280px] w-[280px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#d4b82a]/10 blur-[100px] sm:h-[400px] sm:w-[400px] md:h-[500px] md:w-[500px] md:blur-[140px]" />
 
         <div className="relative mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid min-w-0 items-center gap-10 sm:gap-12 lg:grid-cols-2 lg:gap-16 xl:gap-20">
-            {/* LEFT CONTENT */}
+            {/* =================================================
+                LEFT CONTENT
+            ================================================= */}
             <div className="min-w-0">
+              {/* Label */}
               <div className="mb-5 flex items-center gap-2.5 sm:gap-3">
                 <span className="h-px w-8 shrink-0 bg-[#FCCE60] sm:w-12" />
 
@@ -54,6 +69,7 @@ export default function Production() {
                 </span>
               </div>
 
+              {/* Content */}
               <div className="space-y-4 text-sm leading-7 text-black sm:space-y-5 sm:text-base sm:leading-8 md:text-lg md:leading-8">
                 <p>
                   For over 90 years Novacart has been producing baking molds,
@@ -77,11 +93,14 @@ export default function Production() {
               </div>
             </div>
 
-            {/* RIGHT IMAGE SLIDER */}
+            {/* =================================================
+                RIGHT IMAGE SLIDER
+            ================================================= */}
             <div className="relative min-w-0 w-full">
-              {/* Gold Border Accent */}
+              {/* Gold Corner */}
               <div className="absolute -right-1 -top-1 z-10 h-14 w-14 border-r border-t border-[#d4b82a]/70 sm:-right-3 sm:-top-3 sm:h-20 sm:w-20 md:-right-4 md:-top-4 md:h-24 md:w-24" />
 
+              {/* Slider Card */}
               <div className="relative w-full overflow-hidden rounded-xl border border-black/10 bg-[#111] shadow-xl sm:rounded-2xl sm:shadow-2xl">
                 <Swiper
                   modules={[Autoplay, EffectFade]}
@@ -110,7 +129,7 @@ export default function Production() {
                         {/* Image Overlay */}
                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
 
-                        {/* Image Number */}
+                        {/* Image Counter */}
                         <div className="absolute bottom-3 right-3 flex items-center gap-2 sm:bottom-5 sm:right-5 sm:gap-3">
                           <span className="text-xs font-medium tracking-[0.15em] text-[#d4b82a] sm:text-sm sm:tracking-widest">
                             {String(index + 1).padStart(2, "0")}
@@ -140,12 +159,23 @@ export default function Production() {
           </div>
         </div>
       </section>
+
+      {/* =====================================================
+          ENVIRONMENTAL SUSTAINABILITY
+      ===================================================== */}
       <Environmental_Sustainability />
-      <section className="overflow-hidden bg-white py-12 sm:py-16 md:py-20 lg:py-28">
+
+      {/* =====================================================
+          INNOVATION / RESEARCH & DEVELOPMENT
+      ===================================================== */}
+      <section className="overflow-hidden bg-white py-12 sm:py-16 md:py-20 lg:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 md:px-8 lg:px-10">
           <div className="grid items-center gap-8 sm:gap-10 md:grid-cols-2 md:gap-10 lg:gap-20">
-            {/* ================= TEXT COLUMN ================= */}
+            {/* =================================================
+                TEXT COLUMN
+            ================================================= */}
             <div className="order-2 min-w-0 md:order-1">
+              {/* Label */}
               <div className="mb-4 flex items-center gap-2.5 sm:mb-5 sm:gap-3">
                 <span className="h-px w-8 shrink-0 bg-[#d4b82a] sm:w-10" />
 
@@ -154,25 +184,29 @@ export default function Production() {
                 </span>
               </div>
 
+              {/* Heading */}
               <h2 className="text-3xl font-semibold leading-tight tracking-tight text-black sm:text-4xl md:text-5xl lg:text-6xl">
                 Innovation
               </h2>
 
+              {/* Divider */}
               <div className="mt-5 h-px w-full bg-black/10 sm:mt-6">
                 <div className="h-px w-16 bg-[#d4b82a] sm:w-24" />
               </div>
 
+              {/* Description */}
               <p className="mt-5 max-w-xl text-sm leading-7 text-black/75 sm:mt-7 sm:text-base sm:leading-8 md:text-lg lg:text-xl lg:leading-9">
                 We believe in innovation and continuous growth: this is why
                 Punto Rosso, our laboratory for analysis, research and
                 development, was born.
               </p>
 
+              {/* Button */}
               <Link
                 href="#"
                 className="group relative mt-7 inline-flex w-full items-center justify-center gap-3 overflow-hidden rounded-full bg-[#49308F] px-5 py-3.5 text-[10px] font-bold uppercase tracking-[0.14em] text-white shadow-lg shadow-[#49308F]/20 transition-all duration-300 hover:-translate-y-1 hover:bg-[#d4b82a] hover:text-[#111111] hover:shadow-xl hover:shadow-[#d4b82a]/30 active:translate-y-0 sm:mt-9 sm:w-auto sm:min-w-[190px] sm:px-8 sm:py-4 sm:text-xs sm:tracking-[0.18em]"
               >
-                {/* Hover shine */}
+                {/* Hover Shine */}
                 <span className="absolute inset-0 -translate-x-full bg-white/15 transition-transform duration-500 group-hover:translate-x-full" />
 
                 <span className="relative z-10">Discover More</span>
@@ -186,12 +220,15 @@ export default function Production() {
               </Link>
             </div>
 
-            {/* ================= IMAGE COLUMN ================= */}
+            {/* =================================================
+                IMAGE COLUMN
+            ================================================= */}
             <div className="order-1 min-w-0 md:order-2">
               <div className="group relative w-full overflow-hidden">
-                {/* Gold accent */}
+                {/* Gold Corner */}
                 <div className="absolute right-0 top-0 z-20 h-14 w-14 border-r-2 border-t-2 border-[#d4b82a] sm:h-20 sm:w-20 md:h-24 md:w-24 lg:h-28 lg:w-28" />
 
+                {/* Image */}
                 <div className="relative aspect-[4/3] w-full overflow-hidden sm:aspect-[16/10] md:aspect-[4/3] lg:aspect-[16/11]">
                   <Image
                     src="/production/research.jpg"
@@ -201,11 +238,11 @@ export default function Production() {
                     className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                   />
 
-                  {/* Dark overlay */}
+                  {/* Dark Overlay */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-black/10" />
                 </div>
 
-                {/* Bottom gold line */}
+                {/* Bottom Gold Line */}
                 <div className="h-1 w-1/2 bg-[#d4b82a] transition-all duration-500 group-hover:w-full" />
               </div>
             </div>

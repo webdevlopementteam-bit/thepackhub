@@ -6,14 +6,14 @@ export default function Certifications() {
   return (
     <section
       id="certifications"
-      className="relative overflow-hidden bg-white py-12 sm:py-14 md:py-20  text-black"
+      className="relative overflow-hidden bg-white py-12 text-black sm:py-14 md:py-20"
     >
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 md:px-8 lg:px-10">
         {/* ================= HEADING ================= */}
         <div className="mb-5 flex items-center gap-2.5 sm:gap-3">
           <span className="h-px w-8 shrink-0 bg-[#FCCE60] sm:w-12" />
 
-          <span className="text-[10px] font-semibold uppercase tracking-[0.22em] text-[#d4b82a] sm:text-xs  sm:tracking-[0.3em]">
+          <span className="text-[10px] font-semibold uppercase tracking-[0.22em] text-[#d4b82a] sm:text-xs sm:tracking-[0.3em]">
             Certifications
           </span>
         </div>
@@ -58,14 +58,15 @@ export default function Certifications() {
 
         {/* ================= QUALITY SYSTEM ================= */}
         <div className="mt-12">
-          <h3 className="text-2xl font-semibold">Quality System</h3>
+          <h3 className="text-xl font-semibold sm:text-2xl">Quality System</h3>
 
-          <div className="mt-6 rounded-2xl border border-black/15   bg-white shadow-lg">
+          <div className="mt-6 rounded-2xl border border-black/15 bg-white shadow-lg">
             {/* Card Header */}
             <div className="bg-[#49308F] px-6 py-5 sm:px-8 sm:py-6">
               <div className="flex items-center gap-3">
                 <ShieldCheck size={28} className="text-white sm:h-8 sm:w-8" />
-                <h4 className="text-xl font-semibold text-white sm:text-2xl">
+
+                <h4 className="text-lg font-semibold text-white sm:text-xl">
                   FSC ® Certificate
                 </h4>
               </div>
@@ -103,7 +104,9 @@ export default function Certifications() {
 
         {/* ================= DOTTED BORDER DIV ================= */}
         <div className="mt-10 w-full border-2 border-dotted border-[#49308F] p-6 text-center">
-          <span className="text-lg font-bold">FSC ® Certificate</span>
+          <span className="text-base font-bold sm:text-lg">
+            FSC ® Certificate
+          </span>
         </div>
       </div>
     </section>

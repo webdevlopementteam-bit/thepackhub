@@ -15,12 +15,12 @@ export default function Footer() {
 
   const navLinks = [
     { name: "Home", href: "/" },
-    { name: "About Us", href: "/about" },
+    { name: "About Us", href: "/about-us" },
     { name: "Products", href: "/products" },
-    { name: "Solutions & Services", href: "/solutions" },
+    { name: "Solutions & Services", href: "/solutions-and-services" },
     { name: "Contact", href: "/contact" },
     { name: "Sustainability", href: "/sustainability" },
-    { name: "Research & Development", href: "/research" },
+    { name: "Research & Development", href: "/research-and-development" },
     { name: "Blog", href: "/blog" },
   ];
 
@@ -80,7 +80,7 @@ export default function Footer() {
           {/* Social Icons */}
           <div className="flex shrink-0 items-center justify-center gap-3">
             <Link
-              href="https://facebook.com"
+              href="https://www.facebook.com/packhubofficial?rdid=OHyAOkPRlkWOk2cv&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F19mVTCn53k%2F#"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Facebook"
@@ -90,7 +90,7 @@ export default function Footer() {
             </Link>
 
             <Link
-              href="https://instagram.com"
+              href="https://www.instagram.com/thepack.hub?igsh=dXNra21qYmU0N2Q2"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"
@@ -100,7 +100,7 @@ export default function Footer() {
             </Link>
 
             <Link
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/company/the-pack-hub1/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
@@ -110,7 +110,7 @@ export default function Footer() {
             </Link>
 
             <Link
-              href="https://youtube.com"
+              href="https://www.youtube.com/@thepackhubofficial"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="YouTube"
