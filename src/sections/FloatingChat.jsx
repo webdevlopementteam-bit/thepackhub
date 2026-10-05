@@ -53,7 +53,7 @@ export default function FloatingChat() {
           className={`transition-all duration-300 delay-150 ${isOpen ? "translate-y-0 scale-100" : "translate-y-5 scale-75"}`}
         >
           <SocialButton
-            href="https://www.linkedin.com/in/company/the-pack-hub1/"
+            href="https://www.linkedin.com/company/the-pack-hub1/home/"
             label="LinkedIn"
             icon={<FaLinkedin size={20} />}
             className="bg-[#0A66C2] shadow-[0_8px_25px_rgba(10,102,194,0.35)]"

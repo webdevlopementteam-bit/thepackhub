@@ -124,12 +124,18 @@ export default function Footer() {
 
       {/* ================= COPYRIGHT ================= */}
       <div className="border-t border-gray-200 bg-gray-50/70 px-5 py-4 text-center">
-        <p className="text-[11px] font-medium text-gray-500 sm:text-xs">
+        <Link
+          href={"https://cybertricks.cybertricksmedia.in/"}
+          target="_blank"
+          className="text-[11px] font-medium text-gray-500 sm:text-xs"
+        >
           Copyright © 2024 The Pack Hub
           <span className="mx-2 text-gray-300">|</span>
           Powered by{" "}
-          <span className="font-semibold text-[#D4AF37]">Bharat Bizmart</span>
-        </p>
+          <span className="font-semibold text-[#D4AF37] hover:text-[#B8860B] transition-colors duration-300">
+            CYBERTRICKS Media Pvt Ltd
+          </span>
+        </Link>
       </div>
     </footer>
   );
