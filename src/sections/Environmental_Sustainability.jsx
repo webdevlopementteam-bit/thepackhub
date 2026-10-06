@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Environmental_Sustainability() {
   return (
@@ -22,12 +23,14 @@ export default function Environmental_Sustainability() {
             The Pack Hub business strategies are strongly oriented towards
             reducing environmental impact.
           </p>
-          <button className="bg-[#49308F] hover:bg-purple-700 text-white px-6 py-3 rounded-lg font-semibold">
+          <Link
+            href={"/about-us"}
+            className="bg-[#49308F] hover:bg-purple-700 text-white px-6 py-3 rounded-lg font-semibold"
+          >
             Discover More
-          </button>
+          </Link>
         </div>
       </section>
-     
     </>
   );
 }

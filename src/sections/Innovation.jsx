@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Innovation() {
   return (
@@ -27,12 +28,15 @@ export default function Innovation() {
           </p>
 
           {/* Button */}
-          <button className="group inline-flex items-center gap-2 rounded-full bg-[#49308F] px-7 py-3 text-sm font-semibold text-white shadow-lg shadow-purple-900/20 transition-all duration-300 hover:-translate-y-1 hover:bg-purple-800">
+          <Link
+            href={"/about-us"}
+            className="group inline-flex items-center gap-2 rounded-full bg-[#49308F] px-7 py-3 text-sm font-semibold text-white shadow-lg shadow-purple-900/20 transition-all duration-300 hover:-translate-y-1 hover:bg-purple-800"
+          >
             Discover More
             <span className="text-lg transition-transform duration-300 group-hover:translate-x-1">
               →
             </span>
-          </button>
+          </Link>
         </div>
 
         {/* Right Side */}

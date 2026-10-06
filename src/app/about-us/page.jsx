@@ -90,7 +90,7 @@ export default function AboutSection() {
             </p>
 
             <Link
-              href="/about"
+              href="/contact"
               className="group inline-flex items-center gap-2 rounded-full bg-[#4D2785] px-6 py-3 font-semibold text-white transition-all duration-300 hover:bg-[#123F8A]"
             >
               Discover More

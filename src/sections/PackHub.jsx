@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function PackHub() {
   const [mounted, setMounted] = useState(false);
@@ -46,9 +47,12 @@ export default function PackHub() {
             The numbers of our group
           </p>
 
-          <button className="rounded-full bg-yellow-400 px-6 py-2.5 font-semibold text-black transition hover:bg-yellow-300">
+          <Link
+            href={"/about-us"}
+            className="rounded-full bg-yellow-400 px-6 py-2.5 font-semibold text-black transition hover:bg-yellow-300"
+          >
             Discover More
-          </button>
+          </Link>
         </div>
 
         {/* ================= TOP STATS ================= */}
