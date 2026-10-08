@@ -45,7 +45,7 @@ export default function ProductImageSection() {
 
     if (!category) return;
 
-    window.location.href = `/products/category/${slugify(category)}`;
+    window.location.href = `/product/category/${slugify(category)}`;
   };
 
   /* ================= SCROLL TO PRODUCTS ================= */
@@ -235,7 +235,7 @@ export default function ProductImageSection() {
                 <div
                   className="relative aspect-square cursor-pointer overflow-hidden bg-[#f7f7f5]"
                   onClick={() =>
-                    (window.location.href = `/products/${productSlug}`)
+                    (window.location.href = `/product/${productSlug}`)
                   }
                 >
                   {/* Background Glow */}
@@ -254,7 +254,7 @@ export default function ProductImageSection() {
 
                   {/* Category Badge */}
                   <Link
-                    href={`/products/category/${slugify(product.category)}`}
+                    href={`/product/category/${slugify(product.category)}`}
                     onClick={(e) => e.stopPropagation()}
                     className="
                       group/category
@@ -330,7 +330,7 @@ export default function ProductImageSection() {
 
                   {/* View Product */}
                   <Link
-                    href={`/products/${productSlug}`}
+                    href={`/product/${productSlug}`}
                     className="
                       group/view relative inline-flex items-center gap-2
                       -ml-2 overflow-hidden

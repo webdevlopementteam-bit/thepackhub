@@ -534,7 +534,7 @@ export default function ForTheIndustryPage() {
                 {/* Button */}
                 <div className="mt-7">
                   <Link
-                    href="/products"
+                    href="/product"
                     className="group/btn relative inline-flex items-center gap-3 overflow-hidden rounded-full bg-[#D4AF37] px-5 py-3 text-[11px] font-bold uppercase tracking-[0.12em] text-black shadow-[0_10px_30px_rgba(212,175,55,0.25)] transition-all duration-300 hover:-translate-y-1 hover:bg-white hover:shadow-[0_15px_35px_rgba(212,175,55,0.35)] active:translate-y-0 active:scale-95"
                   >
                     {/* Shine */}

@@ -27,7 +27,7 @@ const navigation = [
   },
   {
     label: "Products",
-    href: "/products",
+    href: "/product",
   },
   {
     label: "Solutions & Services",

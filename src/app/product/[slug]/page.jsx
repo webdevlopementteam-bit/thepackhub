@@ -65,7 +65,7 @@ export default async function ProductPage({ params }) {
           </p>
 
           <Link
-            href="/products"
+            href="/product"
             className="
               group relative mt-7 inline-flex items-center gap-2.5
               overflow-hidden rounded-full bg-black
@@ -144,7 +144,7 @@ export default async function ProductPage({ params }) {
           ================================================= */}
 
           <Link
-            href="/products"
+            href="/product"
             className="
               group/back mb-8 inline-flex items-center gap-2
               rounded-full border border-transparent
@@ -229,7 +229,7 @@ export default async function ProductPage({ params }) {
             <div className="flex min-w-0 flex-col lg:pt-3">
               {/* Category */}
               <Link
-                href={`/products/category/${slugify(product.category)}`}
+                href={`/product/category/${slugify(product.category)}`}
                 className="
                   group/category relative inline-flex w-fit items-center gap-2
                   overflow-hidden rounded-full
@@ -507,7 +507,7 @@ export default async function ProductPage({ params }) {
 
                 {/* View All */}
                 <Link
-                  href="/products"
+                  href="/product"
                   className="
                     group/all inline-flex items-center gap-2
                     rounded-full border border-black/12
@@ -892,7 +892,7 @@ export default async function ProductPage({ params }) {
                 <p className="mt-3 max-w-xl text-sm leading-7 text-black/55">
                   Explore more products from our{" "}
                   <Link
-                    href={`/products/category/${slugify(product.category)}`}
+                    href={`/product/category/${slugify(product.category)}`}
                     className="font-semibold text-black transition-colors hover:text-[#b09220]"
                   >
                     {product.category}
@@ -902,7 +902,7 @@ export default async function ProductPage({ params }) {
               </div>
 
               <Link
-                href="/products"
+                href="/product"
                 className="
                   group/viewall inline-flex w-fit items-center gap-2
                   rounded-full border border-black/10
@@ -938,7 +938,7 @@ export default async function ProductPage({ params }) {
                 return (
                   <Link
                     key={relatedSlug}
-                    href={`/products/${relatedSlug}`}
+                    href={`/product/${relatedSlug}`}
                     className="
                       group relative overflow-hidden
                       rounded-3xl border border-black/10

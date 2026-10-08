@@ -49,7 +49,7 @@ export default async function CategoryPage({ params }) {
           </p>
 
           <Link
-            href="/products"
+            href="/product"
             className="mt-7 inline-flex items-center gap-2 rounded-full bg-black px-6 py-3.5 text-sm font-semibold text-white transition-all duration-300 hover:bg-[#b09220]"
           >
             <ArrowLeft size={16} />
@@ -117,7 +117,7 @@ export default async function CategoryPage({ params }) {
             <span className="text-white/25">/</span>
 
             <Link
-              href="/products"
+              href="/product"
               className="text-white/50 transition-colors duration-300 hover:text-[#e0c35a]"
             >
               Products
@@ -287,7 +287,7 @@ export default async function CategoryPage({ params }) {
                       PRODUCT IMAGE
                   ================================================= */}
 
-                  <Link href={`/products/${productSlug}`} className="block">
+                  <Link href={`/product/${productSlug}`} className="block">
                     <div className="relative aspect-square overflow-hidden bg-[#f7f7f5]">
                       {/* Background Glow */}
 
@@ -367,7 +367,7 @@ export default async function CategoryPage({ params }) {
                     {/* View Product */}
 
                     <Link
-                      href={`/products/${productSlug}`}
+                      href={`/product/${productSlug}`}
                       className="
                         inline-flex items-center gap-2
                         text-[10px] font-bold uppercase
@@ -421,7 +421,7 @@ export default async function CategoryPage({ params }) {
 
           <div className="mt-7 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <Link
-              href="/products"
+              href="/product"
               className="
                 inline-flex items-center gap-2
                 rounded-full

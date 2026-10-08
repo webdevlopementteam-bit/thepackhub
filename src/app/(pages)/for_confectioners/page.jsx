@@ -338,7 +338,7 @@ export default function ForConfectionersPage() {
 
                 <div className="mt-8">
                   <Link
-                    href="/products"
+                    href="/product"
                     className="group/btn relative inline-flex items-center gap-3 overflow-hidden rounded-full bg-[#D4AF37] px-6 py-3.5 text-xs font-bold uppercase tracking-[0.12em] text-black shadow-[0_10px_30px_rgba(212,175,55,0.25)] transition-all duration-300 hover:-translate-y-1 hover:bg-white active:scale-95"
                   >
                     <span className="absolute inset-y-0 -left-1/2 w-1/3 -skew-x-12 bg-white/40 transition-all duration-700 group-hover/btn:left-[130%]" />

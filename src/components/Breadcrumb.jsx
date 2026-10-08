@@ -30,7 +30,7 @@ const navigation = [
 
   {
     label: "Products",
-    href: "/products",
+    href: "/product",
     image: "/breadcrumb/b3.webp",
   },
 
