@@ -2,6 +2,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 
+export const metadata = {
+  alternates: {
+    canonical: "/for_the_distributors",
+  },
+};
+
 export default function DistributorsPage() {
   return (
     <main className="min-h-screen overflow-hidden bg-white text-black">

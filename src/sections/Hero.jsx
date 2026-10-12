@@ -110,16 +110,28 @@ export default function Hero() {
             <div className="absolute -bottom-20 -left-16 h-36 w-36 rounded-full bg-blue-50" />
 
             <div className="relative z-10">
-              <p className="text-sm leading-6 text-slate-600 sm:text-base sm:leading-7 md:text-lg md:leading-8">
+              <h1 className="text-2xl font-bold leading-tight text-blue-950 sm:text-3xl md:text-4xl">
+                Best Packaging Solutions Company in India
+              </h1>
+
+              <p className="mt-3 text-sm leading-6 text-slate-600 sm:text-base sm:leading-7 md:text-lg md:leading-8">
                 <strong className="font-semibold text-blue-950">
                   The Pack Hub,
                 </strong>{" "}
-                established in 2022, are well-known manufacturers, exporters,
-                and suppliers of a broad range of bakery items. We offer our
-                clients a finest range of Baking Cup Paper, wrapping sheets,
-                Printed Cake Box, and Cake Base Gold. These products are
-                manufactured using optimum quality raw materials by our skilled
-                employees in conformity with universal market standards.
+                established in 2022, is a well-known manufacturer, exporter, and
+                supplier of a wide range of bakery packaging products. As a{" "}
+                <Link
+                  href="/contact"
+                  className="font-semibold text-[#49308F] underline underline-offset-4 hover:text-blue-800"
+                >
+                  Best Packaging Solutions Company in India
+                </Link>
+                , we offer our clients a
+                quality range of Baking Cup Paper, Wrapping Sheets, Printed Cake
+                Boxes, and Cake Base Gold. These products are manufactured using
+                quality raw materials by our skilled team in accordance with
+                industry standards, ensuring practical and reliable packaging
+                solutions for diverse business needs.
               </p>
 
               <div className="mt-5 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">

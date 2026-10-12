@@ -1,8 +1,20 @@
-"use client";
-
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+
+export const metadata = {
+  title: "Best Packaging Manufacturer for Export From India | The Pack Hub",
+  description:
+    "Looking for the best packaging manufacturer for export from India? The Pack Hub offers food-safe packaging, custom branding and worldwide shipping. Enquire now!",
+  keywords: [
+    "Best Packaging Manufacturer for Export From India",
+    "Packaging Manufacturer for Export",
+    "Packaging Exporter India",
+  ],
+  alternates: {
+    canonical: "/about-us",
+  },
+};
 
 export default function AboutSection() {
   return (
@@ -18,36 +30,54 @@ export default function AboutSection() {
             </span>
           </div>
 
+          <h1 className="mb-6 text-2xl font-bold leading-tight text-gray-900 sm:text-3xl lg:text-4xl">
+            Best Packaging Manufacturer for Export From India
+          </h1>
+
           <div className="max-w-6xl space-y-5 text-[15px] leading-7 text-gray-600 sm:text-base">
             <p>
               <strong className="font-semibold text-gray-800">
                 The Pack Hub
               </strong>
-              , established in 2022, are well-known manufacturers, exporters,
-              and suppliers of a broad range of bakery items. We offer our
-              client a finest range of Baking Cup Paper, wrapping sheets Printed
-              Cake Box, and Cake Base Gold. These products are manufactured
-              making use of optimum quality raw material by our skilled
-              employees in conformity with universal market standards. Owing to
-              optimum quality, quality paper, elegant design and fine finish,
-              these products are widely recognized amongst clientele.
+              , established in 2022, is a well-known manufacturer, exporter,
+              and supplier of a wide range of bakery and food packaging
+              products. We offer our clients a quality range of Baking Cup
+              Paper, Wrapping Sheets, Printed Cake Boxes, and Cake Base Gold.
+              These products are manufactured using quality raw materials by
+              our skilled team in accordance with industry standards. With a
+              focus on quality, elegant designs, and fine finishing, our
+              products are widely recognized among customers.
             </p>
 
             <p>
-              Industries are expanding and acknowledging the use of paper
-              products. Our wide range of paper products are customized
-              according to the customers’ demand. We supply our baking paper
-              cups in Delhi NCR and different parts of India. Our products are
-              high in demand in all the sectors be it bakery, hotels,
-              restaurants, railways, airways, etc.
+              As industries continue to expand and acknowledge the benefits of
+              paper-based packaging, we offer customized solutions to meet
+              diverse customer requirements. We supply our baking paper cups
+              across Delhi NCR and different parts of India, catering to the
+              needs of bakeries, hotels, restaurants, railways, airways, and
+              other sectors. As a growing{" "}
+              <Link
+                href="/contact"
+                className="font-semibold text-[#49308F] underline underline-offset-4 hover:text-[#123F8A]"
+              >
+                packaging manufacturer for export
+              </Link>
+              , we also aim to serve businesses looking for reliable packaging
+              solutions for domestic and international markets.
             </p>
 
             <p>
-              Our products are manufactured with all the precision and are
-              delivered after various quality checks. We also take care of our
-              clients’ other demands like printing logo, image, brand promotion,
-              etc. We take pride in being recognized as the best disposable
-              paper cups manufacturer in India.
+              Our products are manufactured with precision and delivered after
+              undergoing quality checks to maintain consistent standards. We
+              also fulfill clients&apos; customization requirements, including
+              logo printing, images, and brand promotion designs. With our
+              commitment to product quality, customization, and customer
+              satisfaction, The Pack Hub aims to be the{" "}
+              <strong className="font-semibold text-gray-800">
+                best packaging manufacturer for export from India
+              </strong>
+              , offering practical packaging
+              solutions for businesses across different industries.
             </p>
           </div>
         </div>

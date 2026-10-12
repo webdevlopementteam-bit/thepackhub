@@ -2,6 +2,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
+export const metadata = {
+  alternates: {
+    canonical: "/research-and-development",
+  },
+};
+
 export default function ResearchAndDevelopmentPage() {
   return (
     <main className="overflow-hidden bg-white">

@@ -2,6 +2,106 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
+export const metadata = {
+  title: "Top Sustainable Food Packaging Supplier in India | The Pack Hub",
+  description:
+    "The Pack Hub is a sustainable food packaging supplier in India—paper-based, eco-friendly packaging for bakeries, food brands, and online sellers. Get a quote!",
+  keywords: [
+    "Sustainable Food Packaging Supplier",
+    "Eco Friendly Packaging Supplier for Ecommerce Brands",
+  ],
+  alternates: {
+    canonical: "/sustainability",
+  },
+};
+
+const environmentalPoints = [
+  {
+    title: "Paper-Based Materials",
+    text: "Our range is built around paper and paperboard, including baking paper cups, laddu paper cups, cake boxes, food wrapping paper and paper moulds. Paper is a renewable material and a more sustainable alternative to many plastic packaging options.",
+  },
+  {
+    title: "Right-Sized Packaging",
+    text: "Packaging that fits the product uses less material and travels more efficiently. We offer multiple sizes and custom options, so businesses can avoid oversized packs and use only what they need.",
+  },
+  {
+    title: "Less Waste in Production",
+    text: "We aim to use materials carefully and reduce waste at every stage. Efficient cutting and planning of paper sheets help us make better use of each sheet, and we try to reuse or recycle leftover paper wherever possible.",
+  },
+  {
+    title: "Responsible Material Selection",
+    text: "We choose quality paper and paperboard suited to food packaging, with a focus on strength, safety and consistency. We keep reviewing our materials and suppliers as better sustainable options become available.",
+  },
+  {
+    title: "Efficient Packing and Transport",
+    text: "We pack products in a way that makes good use of carton space, which helps reduce the number of shipments needed and keeps transport more efficient.",
+  },
+];
+
+function SectionLabel({ number, gold = false }) {
+  return (
+    <div className="flex items-center gap-3">
+      <span
+        className={`flex h-9 w-9 items-center justify-center rounded-full border text-[11px] font-bold ${
+          gold
+            ? "border-[#D4AF37]/40 bg-[#D4AF37]/10 text-[#A98520]"
+            : "border-[#49308F]/25 bg-[#49308F]/5 text-[#49308F]"
+        }`}
+      >
+        {number}
+      </span>
+    </div>
+  );
+}
+
+function SectionImage({ src, alt, gold = true }) {
+  return (
+    <div className="relative">
+      <div
+        className={`absolute -inset-3 rounded-[1.8rem] blur-2xl ${
+          gold ? "bg-[#D4AF37]/10" : "bg-[#49308F]/8"
+        }`}
+      />
+
+      <div className="group relative overflow-hidden rounded-2xl border border-black/10 bg-white shadow-[0_18px_50px_rgba(0,0,0,0.10)] sm:rounded-3xl">
+        <div className="relative aspect-[4/3] overflow-hidden">
+          <Image
+            src={src}
+            alt={alt}
+            fill
+            className="object-cover transition-transform duration-700 group-hover:scale-105"
+            sizes="(max-width: 767px) 100vw, 50vw"
+          />
+        </div>
+
+        <div
+          className={`h-[3px] w-full bg-gradient-to-r ${
+            gold
+              ? "from-[#A98520] via-[#D4AF37] to-[#A98520]"
+              : "from-[#49308F]/60 via-[#49308F] to-[#49308F]/60"
+          }`}
+        />
+      </div>
+    </div>
+  );
+}
+
+function TextBlock({ title, children }) {
+  return (
+    <div className="mx-auto max-w-4xl">
+      <h2 className="text-2xl font-bold leading-tight tracking-tight text-black sm:text-3xl">
+        {title}
+      </h2>
+
+      <div className="mt-5 h-[3px] w-12 bg-[#D4AF37]" />
+
+      <div className="mt-6 space-y-4 text-[14px] leading-7 text-black/60 sm:text-[15px]">
+        {children}
+      </div>
+    </div>
+  );
+}
+
 export default function SustainabilityPage() {
   return (
     <main className="overflow-hidden bg-white">
@@ -31,286 +131,277 @@ export default function SustainabilityPage() {
 
             {/* Heading */}
             <h1 className="text-3xl font-bold leading-tight tracking-tight text-black sm:text-4xl lg:text-5xl">
-              Sustainability
+              Sustainable Food Packaging Supplier
             </h1>
 
             {/* Description */}
             <p className="mt-5 max-w-3xl text-sm leading-7 text-black/60 sm:text-[15px] sm:leading-7">
-              Novacart adheres to the principles of sustainable growth, believes
-              in corporate social value and actively strives to further reduce
-              its impact on the environment.
+              <strong className="font-semibold text-black">
+                The Pack Hub is a{" "}
+                <Link
+                  href="/product"
+                  className="text-[#49308F] underline underline-offset-4 hover:text-[#123F8A]"
+                >
+                  sustainable food packaging supplier in India
+                </Link>
+                , offering paper-based, eco-friendly packaging for bakeries,
+                restaurants, food brands and online sellers.
+              </strong>{" "}
+              We believe good
+              packaging should protect food, look attractive and reduce
+              dependence on single-use plastic.
             </p>
           </div>
         </div>
       </section>
 
       {/* =====================================================
-          SUSTAINABILITY CONTENT
+          OUR APPROACH
       ===================================================== */}
-      <section className="bg-white">
-        {/* =====================================================
-            RESPECT FOR ENVIRONMENT
-        ===================================================== */}
-        <section className="relative overflow-hidden">
-          <div className="h-[2px] w-full bg-[#49308F]" />
+      <section className="px-5 py-14 sm:px-8 sm:py-18 lg:px-10 lg:py-20">
+        <TextBlock title="Our Approach to Sustainable Packaging">
+          <p>
+            Packaging touches every food product, from the cake in a bakery to
+            the order that arrives at a customer’s door. That is why the choices
+            we make as a packaging manufacturer matter. At The Pack Hub, we
+            focus on practical sustainability: paper-based products, less waste,
+            efficient production and packaging that businesses can use every
+            day.
+          </p>
 
-          <div className="pointer-events-none absolute -right-24 top-1/2 hidden h-72 w-72 -translate-y-1/2 rounded-full bg-[#49308F]/5 blur-[100px] lg:block" />
+          <p>
+            We do not believe sustainability is just a label. It is a set of
+            steady choices, from the materials we pick to the way we pack and
+            supply orders.
+          </p>
+        </TextBlock>
+      </section>
 
-          <div className="relative mx-auto max-w-7xl px-5 py-14 sm:px-8 sm:py-18 lg:px-10 lg:py-20">
-            <div className="grid items-center gap-10 md:grid-cols-2 md:gap-12 lg:gap-16">
-              {/* LEFT CONTENT */}
-              <div className="order-1">
-                <div className="flex items-center gap-3">
-                  <span className="flex h-9 w-9 items-center justify-center rounded-full border border-[#49308F]/25 bg-[#49308F]/5 text-[11px] font-bold text-[#49308F]">
-                    01
-                  </span>
+      {/* =====================================================
+          ENVIRONMENTAL RESPONSIBILITY
+      ===================================================== */}
+      <section className="relative overflow-hidden bg-[#fafaf8]">
+        <div className="h-[2px] w-full bg-[#49308F]" />
 
-                  <span className="text-[10px] font-bold uppercase tracking-[0.22em] text-[#49308F]">
-                    Environmental Responsibility
-                  </span>
-                </div>
+        <div className="pointer-events-none absolute -right-24 top-1/2 hidden h-72 w-72 -translate-y-1/2 rounded-full bg-[#49308F]/5 blur-[100px] lg:block" />
 
-                <h2 className="mt-5 text-2xl font-bold leading-tight tracking-tight text-black sm:text-3xl lg:text-4xl">
-                  Respect for the{" "}
-                  <span className="relative text-[#49308F]">
-                    environment
-                    <span className="absolute -bottom-1.5 left-0 h-[2px] w-full bg-[#D4AF37]" />
-                  </span>
-                </h2>
+        <div className="relative mx-auto max-w-7xl px-5 py-14 sm:px-8 sm:py-18 lg:px-10 lg:py-20">
+          <div className="grid items-start gap-10 md:grid-cols-2 md:gap-12 lg:gap-16">
+            <div>
+              <SectionLabel number="01" />
 
-                <div className="mt-5 h-[3px] w-12 bg-[#D4AF37]" />
+              <h2 className="mt-5 text-2xl font-bold leading-tight tracking-tight text-black sm:text-3xl lg:text-4xl">
+                Environmental{" "}
+                <span className="relative text-[#49308F]">
+                  Responsibility
+                  <span className="absolute -bottom-1.5 left-0 h-[2px] w-full bg-[#D4AF37]" />
+                </span>
+              </h2>
 
-                <div className="mt-6 space-y-4 text-[14px] leading-7 text-black/60 sm:text-[15px]">
-                  <p>
-                    All our strategies are based on a careful assessment of the
-                    environmental impact and on the protection of natural
-                    resources, in line with the sustainable development goals
-                    set by the United Nations for 2030. We carefully choose the
-                    raw materials, preferring the FSC ® certified paper that
-                    ensures responsible management of forests, where more trees
-                    are planted than those that are cut.
-                  </p>
+              <div className="mt-5 h-[3px] w-12 bg-[#D4AF37]" />
 
-                  <p>
-                    We have equipped Novacart’s facilities with LED lighting
-                    systems, which are more energy-efficient, and we design
-                    low-consumption systems in-house. We use storage modes that
-                    optimize transport by stacking boxes for the transfer of a
-                    higher number of products, reducing travel and CO2
-                    emissions. Use of very small water, recycling of production
-                    waste and optimization of the packaging are other strategies
-                    we have chosen to adopt.
-                  </p>
-                </div>
+              <div className="mt-6 space-y-6">
+                {environmentalPoints.map((point) => (
+                  <div key={point.title}>
+                    <h3 className="text-base font-semibold text-black sm:text-lg">
+                      {point.title}
+                    </h3>
 
-                <Link
-                  href="https://www.thepackhub.in/sustainability/#"
-                  className="group mt-6 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.12em] text-[#49308F]"
-                >
-                  Discover More
-                  <ArrowRight
-                    size={15}
-                    className="transition-transform duration-300 group-hover:translate-x-1"
-                  />
-                </Link>
-              </div>
-
-              {/* RIGHT IMAGE */}
-              <div className="relative order-2">
-                <div className="absolute -inset-3 rounded-[1.8rem] bg-[#D4AF37]/10 blur-2xl" />
-
-                <div className="group relative overflow-hidden rounded-2xl border border-black/10 bg-white shadow-[0_18px_50px_rgba(0,0,0,0.10)] sm:rounded-3xl">
-                  <div className="relative aspect-[4/3] overflow-hidden">
-                    <Image
-                      src="/sustainability/img1.png"
-                      alt="Respect for the environment"
-                      fill
-                      className="object-cover transition-transform duration-700 group-hover:scale-105"
-                      sizes="(max-width: 767px) 100vw, 50vw"
-                    />
+                    <p className="mt-2 text-[14px] leading-7 text-black/60 sm:text-[15px]">
+                      {point.text}
+                    </p>
                   </div>
+                ))}
+              </div>
+            </div>
 
-                  <div className="h-[3px] w-full bg-gradient-to-r from-[#A98520] via-[#D4AF37] to-[#A98520]" />
-                </div>
+            <div className="md:sticky md:top-24">
+              <SectionImage
+                src="/sustainability/img1.png"
+                alt="Environmental Responsibility"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* =====================================================
+          FOOD SAFETY
+      ===================================================== */}
+      <section className="px-5 py-14 sm:px-8 sm:py-18 lg:px-10 lg:py-20">
+        <TextBlock title="Food Safety and Quality Come First">
+          <p>
+            Sustainable packaging must still protect food. Our products are made
+            from materials suitable for food packaging applications, and we
+            focus on hygiene, strength and consistent quality. Greaseproof
+            options help hold oil and moisture, so food stays fresh and
+            presentable from the kitchen to the customer.
+          </p>
+        </TextBlock>
+      </section>
+
+      {/* =====================================================
+          SOCIAL RESPONSIBILITY
+      ===================================================== */}
+      <section className="relative overflow-hidden bg-[#fafaf8]">
+        <div className="h-[2px] w-full bg-[#49308F]" />
+
+        <div className="pointer-events-none absolute -left-24 top-1/2 hidden h-72 w-72 -translate-y-1/2 rounded-full bg-[#D4AF37]/5 blur-[100px] lg:block" />
+
+        <div className="relative mx-auto max-w-7xl px-5 py-14 sm:px-8 sm:py-18 lg:px-10 lg:py-20">
+          <div className="grid items-center gap-10 md:grid-cols-2 md:gap-12 lg:gap-16">
+            <div className="order-2 md:order-1">
+              <SectionImage
+                src="/sustainability/img2.webp"
+                alt="Social Responsibility"
+                gold={false}
+              />
+            </div>
+
+            <div className="order-1 md:order-2">
+              <SectionLabel number="02" gold />
+
+              <h2 className="mt-5 text-2xl font-bold leading-tight tracking-tight text-black sm:text-3xl lg:text-4xl">
+                Social{" "}
+                <span className="relative text-[#49308F]">
+                  Responsibility
+                  <span className="absolute -bottom-1.5 left-0 h-[2px] w-full bg-[#D4AF37]" />
+                </span>
+              </h2>
+
+              <div className="mt-5 h-[3px] w-12 bg-[#D4AF37]" />
+
+              <div className="mt-6 space-y-4 text-[14px] leading-7 text-black/60 sm:text-[15px]">
+                <p>
+                  We care about the people behind every product. The Pack Hub
+                  aims to provide a safe, fair and respectful workplace, support
+                  skill development, and build long-term relationships with
+                  customers and suppliers. We believe responsible business means
+                  treating people well, from our team to the customers we serve.
+                </p>
               </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* =====================================================
-            RESPECT FOR PEOPLE
-        ===================================================== */}
-        <section className="relative overflow-hidden bg-[#fafaf8]">
-          <div className="h-[2px] w-full bg-[#49308F]" />
+      {/* =====================================================
+          COMMUNITY
+      ===================================================== */}
+      <section className="relative overflow-hidden">
+        <div className="h-[2px] w-full bg-[#49308F]" />
 
-          <div className="pointer-events-none absolute -left-24 top-1/2 hidden h-72 w-72 -translate-y-1/2 rounded-full bg-[#D4AF37]/5 blur-[100px] lg:block" />
+        <div className="pointer-events-none absolute -right-24 top-1/2 hidden h-72 w-72 -translate-y-1/2 rounded-full bg-[#49308F]/5 blur-[100px] lg:block" />
 
-          <div className="relative mx-auto max-w-7xl px-5 py-14 sm:px-8 sm:py-18 lg:px-10 lg:py-20">
-            <div className="grid items-center gap-10 md:grid-cols-2 md:gap-12 lg:gap-16">
-              {/* LEFT IMAGE */}
-              <div className="relative order-2 md:order-1">
-                <div className="absolute -inset-3 rounded-[1.8rem] bg-[#49308F]/8 blur-2xl" />
+        <div className="relative mx-auto max-w-7xl px-5 py-14 sm:px-8 sm:py-18 lg:px-10 lg:py-20">
+          <div className="grid items-center gap-10 md:grid-cols-2 md:gap-12 lg:gap-16">
+            <div>
+              <SectionLabel number="03" />
 
-                <div className="group relative overflow-hidden rounded-2xl border border-black/10 bg-white shadow-[0_18px_50px_rgba(0,0,0,0.10)] sm:rounded-3xl">
-                  <div className="relative aspect-[4/3] overflow-hidden">
-                    <Image
-                      src="/sustainability/img2.webp"
-                      alt="Respect for people"
-                      fill
-                      className="object-cover transition-transform duration-700 group-hover:scale-105"
-                      sizes="(max-width: 767px) 100vw, 50vw"
-                    />
-                  </div>
+              <h2 className="mt-5 text-2xl font-bold leading-tight tracking-tight text-black sm:text-3xl lg:text-4xl">
+                Growing Together{" "}
+                <span className="relative text-[#49308F]">
+                  With Our Community
+                  <span className="absolute -bottom-1.5 left-0 h-[2px] w-full bg-[#D4AF37]" />
+                </span>
+              </h2>
 
-                  <div className="h-[3px] w-full bg-gradient-to-r from-[#49308F]/60 via-[#49308F] to-[#49308F]/60" />
-                </div>
-              </div>
+              <div className="mt-5 h-[3px] w-12 bg-[#D4AF37]" />
 
-              {/* RIGHT CONTENT */}
-              <div className="order-1 md:order-2">
-                <div className="flex items-center gap-3">
-                  <span className="flex h-9 w-9 items-center justify-center rounded-full border border-[#D4AF37]/40 bg-[#D4AF37]/10 text-[11px] font-bold text-[#A98520]">
-                    02
-                  </span>
-
-                  <span className="text-[10px] font-bold uppercase tracking-[0.22em] text-[#A98520]">
-                    Social Responsibility
-                  </span>
-                </div>
-
-                <h2 className="mt-5 text-2xl font-bold leading-tight tracking-tight text-black sm:text-3xl lg:text-4xl">
-                  Respect for{" "}
-                  <span className="relative text-[#49308F]">
-                    people
-                    <span className="absolute -bottom-1.5 left-0 h-[2px] w-full bg-[#D4AF37]" />
-                  </span>
-                </h2>
-
-                <div className="mt-5 h-[3px] w-12 bg-[#D4AF37]" />
-
-                <div className="mt-6 space-y-4 text-[14px] leading-7 text-black/60 sm:text-[15px]">
-                  <p>
-                    In accordance with the sustainable development goals
-                    promoted by the United Nations, we are committed to
-                    promoting the health and well-being of every person who
-                    comes into contact with our company, from employees to
-                    customers.
-                  </p>
-
-                  <p>
-                    We adopt codes of conduct and guidelines to support decent
-                    and responsible economic growth and support investments
-                    aimed at improving the working conditions of employees.
-                  </p>
-
-                  <p>
-                    The monitoring of each stage of the production chain through
-                    certified checks is constant, in order to guarantee the
-                    safety of employees, customers, final consumers and every
-                    individual involved in the group’s activities.
-                  </p>
-                </div>
-
-                <Link
-                  href="https://www.thepackhub.in/sustainability/#"
-                  className="group mt-6 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.12em] text-[#49308F]"
-                >
-                  Discover More
-                  <ArrowRight
-                    size={15}
-                    className="transition-transform duration-300 group-hover:translate-x-1"
-                  />
-                </Link>
+              <div className="mt-6 space-y-4 text-[14px] leading-7 text-black/60 sm:text-[15px]">
+                <p>
+                  As a Delhi-based manufacturer, we create work opportunities,
+                  support local supply chains and help small bakeries, home
+                  bakers and growing food brands access quality packaging at
+                  fair prices. Better packaging helps small businesses look
+                  professional and grow with confidence.
+                </p>
               </div>
             </div>
+
+            <SectionImage
+              src="/sustainability/img3.webp"
+              alt="Growing Together With Our Community"
+            />
           </div>
-        </section>
+        </div>
 
-        {/* =====================================================
-            ECONOMIC DEVELOPMENT
-        ===================================================== */}
-        <section className="relative overflow-hidden">
-          <div className="h-[2px] w-full bg-[#49308F]" />
+        <div className="h-[2px] w-full bg-[#49308F]" />
+      </section>
 
-          <div className="pointer-events-none absolute -right-24 top-1/2 hidden h-72 w-72 -translate-y-1/2 rounded-full bg-[#49308F]/5 blur-[100px] lg:block" />
+      {/* =====================================================
+          ECOMMERCE + CUSTOM BRANDED + COMMITMENT
+      ===================================================== */}
+      <section className="space-y-14 px-5 py-14 sm:px-8 sm:py-18 lg:space-y-16 lg:px-10 lg:py-20">
+        <TextBlock title="Eco-Friendly Packaging for Ecommerce Brands">
+          <p>
+            Online food sellers and e-commerce brands need packaging that
+            survives delivery, looks good on unboxing, and supports a greener
+            brand image. As an eco-friendly packaging supplier for e-commerce
+            brands, The Pack Hub offers paper-based packaging with custom sizes,
+            printing and branding, so your products arrive neat, protected and
+            on-brand.
+          </p>
 
-          <div className="relative mx-auto max-w-7xl px-5 py-14 sm:px-8 sm:py-18 lg:px-10 lg:py-20">
-            <div className="grid items-center gap-10 md:grid-cols-2 md:gap-12 lg:gap-16">
-              {/* LEFT CONTENT */}
-              <div className="order-1">
-                <div className="flex items-center gap-3">
-                  <span className="flex h-9 w-9 items-center justify-center rounded-full border border-[#49308F]/25 bg-[#49308F]/5 text-[11px] font-bold text-[#49308F]">
-                    03
-                  </span>
+          <p>
+            Whether you sell cakes, sweets, bakery items or packaged food
+            online, share your product and order volume with us and we will
+            suggest suitable packaging options.
+          </p>
+        </TextBlock>
 
-                  <span className="text-[10px] font-bold uppercase tracking-[0.22em] text-[#49308F]">
-                    Community Growth
-                  </span>
-                </div>
+        <TextBlock title="Custom Branded Eco-Friendly Packaging">
+          <p>
+            Sustainable packaging can also look beautiful. We offer custom size,
+            colour and logo printing, so your brand can show its eco-friendly
+            values while standing out on shelves, counters and doorsteps.
+            Branded paper packaging also builds trust with customers who prefer
+            greener choices.
+          </p>
+        </TextBlock>
 
-                <h2 className="mt-5 text-2xl font-bold leading-tight tracking-tight text-black sm:text-3xl lg:text-4xl">
-                  Economic development{" "}
-                  <span className="relative text-[#49308F]">
-                    of communities
-                    <span className="absolute -bottom-1.5 left-0 h-[2px] w-full bg-[#D4AF37]" />
-                  </span>
-                </h2>
+        <TextBlock title="Our Commitment">
+          <p>
+            We will keep improving our products, processes and materials as
+            sustainable options grow. Our goal is simple: help food businesses
+            pack better, waste less and build trust with customers who care
+            about the environment.
+          </p>
+        </TextBlock>
+      </section>
 
-                <div className="mt-5 h-[3px] w-12 bg-[#D4AF37]" />
+      {/* =====================================================
+          CTA
+      ===================================================== */}
+      <section className="bg-[#49308F] px-5 py-14 sm:px-8 sm:py-16 lg:px-10">
+        <div className="mx-auto max-w-4xl text-white">
+          <h2 className="text-2xl font-bold leading-tight tracking-tight sm:text-3xl">
+            Partner With The Pack Hub
+          </h2>
 
-                <div className="mt-6 space-y-4 text-[14px] leading-7 text-black/60 sm:text-[15px]">
-                  <p>
-                    We want to create value for the communities and territories
-                    in which we operate, fostering growth in a sustainable
-                    manner. Being a market leader allows us to guarantee
-                    economic solidity creating wealth and well-being for the
-                    territory and the population.
-                  </p>
+          <p className="mt-4 text-[14px] leading-7 text-white/80 sm:text-[15px]">
+            Looking for a reliable{" "}
+            <Link
+              href="/contact"
+              className="font-semibold text-[#D4AF37] underline underline-offset-4 hover:text-[#e0c35a]"
+            >
+              sustainable food packaging supplier
+            </Link>
+            ? Tell us your product, size and quantity, and we will recommend the
+            right packaging.
+          </p>
 
-                  <p>
-                    We offer jobs, explore new markets, open new locations and
-                    invest in research and development to continuously innovate.
-                    We are also committed to reducing the production costs of
-                    our supply chain, so that our products are always
-                    competitive on the market.
-                  </p>
-                </div>
-
-                <Link
-                  href="https://www.thepackhub.in/sustainability/#"
-                  className="group mt-6 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.12em] text-[#49308F]"
-                >
-                  Discover More
-                  <ArrowRight
-                    size={15}
-                    className="transition-transform duration-300 group-hover:translate-x-1"
-                  />
-                </Link>
-              </div>
-
-              {/* RIGHT IMAGE */}
-              <div className="relative order-2">
-                <div className="absolute -inset-3 rounded-[1.8rem] bg-[#D4AF37]/10 blur-2xl" />
-
-                <div className="group relative overflow-hidden rounded-2xl border border-black/10 bg-white shadow-[0_18px_50px_rgba(0,0,0,0.10)] sm:rounded-3xl">
-                  <div className="relative aspect-[4/3] overflow-hidden">
-                    <Image
-                      src="/sustainability/img3.webp"
-                      alt="Economic development of communities"
-                      fill
-                      className="object-cover transition-transform duration-700 group-hover:scale-105"
-                      sizes="(max-width: 767px) 100vw, 50vw"
-                    />
-                  </div>
-
-                  <div className="h-[3px] w-full bg-gradient-to-r from-[#A98520] via-[#D4AF37] to-[#A98520]" />
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="h-[2px] w-full bg-[#49308F]" />
-        </section>
+          <Link
+            href="/contact"
+            className="group mt-7 inline-flex items-center gap-2 rounded-full bg-[#D4AF37] px-7 py-3.5 text-sm font-bold text-black transition-all duration-300 hover:bg-[#e0c35a]"
+          >
+            Contact Us
+            <ArrowRight
+              size={16}
+              className="transition-transform duration-300 group-hover:translate-x-1"
+            />
+          </Link>
+        </div>
       </section>
     </main>
   );

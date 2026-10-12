@@ -90,6 +90,9 @@ const navigation = [
   },
 ];
 
+// Pages that render their own H1, so the banner title must not be one
+const pagesWithOwnH1 = ["/about-us", "/sustainability"];
+
 /* =====================================================
    GET CURRENT PAGE
 ===================================================== */
@@ -143,6 +146,8 @@ export default function Breadcrumb() {
   */
   const image = currentPage.image || "/breadcrumb/b1.png";
 
+  const Title = pagesWithOwnH1.includes(pathname) ? "p" : "h1";
+
   return (
     <section className="relative h-[220px] overflow-hidden sm:h-[280px] md:h-[320px]">
       {/* =====================================================
@@ -173,9 +178,9 @@ export default function Breadcrumb() {
               TITLE
           ===================================================== */}
 
-          <h1 className="text-3xl font-bold text-white sm:text-4xl md:text-5xl">
+          <Title className="text-3xl font-bold text-white sm:text-4xl md:text-5xl">
             {currentPage.label}
-          </h1>
+          </Title>
 
           {/* =====================================================
               BREADCRUMB

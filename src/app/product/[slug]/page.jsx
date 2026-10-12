@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, ArrowRight, Check, Package, Sparkles } from "lucide-react";
 import { products } from "@/app/lib/products";
+import { productContent } from "@/app/lib/productContent";
 
 /* =====================================================
    SLUG GENERATOR
@@ -23,6 +24,45 @@ export function generateStaticParams() {
   return products.map((product) => ({
     slug: product.slug || slugify(product.name),
   }));
+}
+
+/* =====================================================
+   METADATA
+===================================================== */
+
+export async function generateMetadata({ params }) {
+  const { slug } = await params;
+  const meta = productContent[slug]?.meta;
+  const alternates = { canonical: `/product/${slug}` };
+
+  if (!meta) return { alternates };
+
+  return {
+    title: meta.title,
+    description: meta.description,
+    keywords: meta.keywords,
+    alternates,
+  };
+}
+
+/* =====================================================
+   LABELLED TEXT
+   "Label: text" → bold label + text
+===================================================== */
+
+function LabelledText({ text, labelled }) {
+  const splitAt = labelled ? text.indexOf(": ") : -1;
+
+  if (splitAt === -1) return text;
+
+  return (
+    <>
+      <strong className="font-semibold text-black">
+        {text.slice(0, splitAt + 1)}
+      </strong>
+      {text.slice(splitAt + 1)}
+    </>
+  );
 }
 
 /* =====================================================
@@ -110,9 +150,13 @@ export default async function ProductPage({ params }) {
 
   const tags = Array.isArray(data.tags) ? data.tags : [];
 
-  const descriptionData = Array.isArray(data.descriptionData)
-    ? data.descriptionData
-    : [];
+  const content = productContent[slug] || {};
+
+  const descriptionData = Array.isArray(content.descriptionData)
+    ? content.descriptionData
+    : Array.isArray(data.descriptionData)
+      ? data.descriptionData
+      : [];
 
   /* =====================================================
      RELATED PRODUCTS
@@ -127,6 +171,15 @@ export default async function ProductPage({ params }) {
 
   return (
     <main className="overflow-hidden bg-white">
+      {content.faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(content.faqSchema),
+          }}
+        />
+      )}
+
       {/* =====================================================
           TOP PRODUCT SECTION
       ===================================================== */}
@@ -208,7 +261,7 @@ export default async function ProductPage({ params }) {
               <div className="relative aspect-square overflow-hidden">
                 <Image
                   src={product.image}
-                  alt={product.name}
+                  alt={content.imageAlt || product.name}
                   fill
                   priority
                   className="
@@ -276,7 +329,7 @@ export default async function ProductPage({ params }) {
 
               {/* Product Name */}
               <h1 className="mt-5 text-3xl font-bold leading-[1.08] tracking-tight text-black sm:text-4xl lg:text-5xl xl:text-[3.4rem]">
-                {product.name}
+                {content.h1 || product.name}
               </h1>
 
               {/* Gold Line */}
@@ -779,10 +832,121 @@ export default async function ProductPage({ params }) {
                           >
                             <span className="mt-2 flex h-2 w-2 shrink-0 rounded-full bg-[#b09220] shadow-[0_0_0_4px_rgba(176,146,32,0.1)]" />
 
-                            <span>{item}</span>
+                            <span>
+                              <LabelledText
+                                text={item}
+                                labelled={block.labelled}
+                              />
+                            </span>
                           </li>
                         ))}
                       </ul>
+                    );
+
+                  case "checklist":
+                    return (
+                      <ul
+                        key={index}
+                        className="space-y-1 rounded-2xl border border-black/8 bg-[#fafaf8] p-4 shadow-[0_10px_30px_rgba(0,0,0,0.03)] sm:p-5"
+                      >
+                        {block.items?.map((item, itemIndex) => (
+                          <li
+                            key={itemIndex}
+                            className="flex items-start gap-3 rounded-xl p-3 text-sm leading-6 text-black/70 transition-colors duration-300 hover:bg-white"
+                          >
+                            <span aria-hidden="true" className="shrink-0">
+                              ✅
+                            </span>
+
+                            <span>
+                              <LabelledText
+                                text={item}
+                                labelled={block.labelled}
+                              />
+                            </span>
+                          </li>
+                        ))}
+                      </ul>
+                    );
+
+                  case "steps":
+                    return (
+                      <ol key={index} className="space-y-3">
+                        {block.items?.map((item, itemIndex) => (
+                          <li
+                            key={itemIndex}
+                            className="flex items-start gap-4 rounded-2xl border border-black/8 bg-white p-4 text-sm leading-6 text-black/70 sm:text-[15px]"
+                          >
+                            <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#b09220] text-xs font-bold text-white">
+                              {itemIndex + 1}
+                            </span>
+
+                            <span className="pt-0.5">
+                              <LabelledText
+                                text={item}
+                                labelled={block.labelled}
+                              />
+                            </span>
+                          </li>
+                        ))}
+                      </ol>
+                    );
+
+                  case "table":
+                    return (
+                      <div
+                        key={index}
+                        className="overflow-x-auto rounded-2xl border border-black/10"
+                      >
+                        <table className="w-full min-w-[420px] text-left text-sm sm:text-[15px]">
+                          <thead className="bg-black text-white">
+                            <tr>
+                              {block.headers.map((header) => (
+                                <th
+                                  key={header}
+                                  className="px-4 py-3 font-semibold"
+                                >
+                                  {header}
+                                </th>
+                              ))}
+                            </tr>
+                          </thead>
+
+                          <tbody>
+                            {block.rows.map((row, rowIndex) => (
+                              <tr
+                                key={rowIndex}
+                                className="border-t border-black/8 odd:bg-[#fafaf8]"
+                              >
+                                {row.map((cell, cellIndex) => (
+                                  <td
+                                    key={cellIndex}
+                                    className={`px-4 py-3 ${
+                                      cellIndex === 0
+                                        ? "font-semibold text-black"
+                                        : "text-black/65"
+                                    }`}
+                                  >
+                                    {cell}
+                                  </td>
+                                ))}
+                              </tr>
+                            ))}
+                          </tbody>
+                        </table>
+                      </div>
+                    );
+
+                  case "button":
+                    return (
+                      <Link
+                        key={index}
+                        href={block.href}
+                        className="inline-flex items-center gap-2 rounded-full bg-black px-6 py-3.5 text-sm font-semibold text-white transition-all duration-300 hover:-translate-y-1 hover:bg-[#b09220]"
+                      >
+                        {block.content}
+                        <ArrowRight size={16} />
+                      </Link>
                     );
 
                   case "faq":

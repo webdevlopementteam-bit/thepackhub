@@ -39,9 +39,9 @@ export default function PackHub() {
       <div className="relative z-10 mx-auto flex min-h-screen w-full max-w-7xl flex-col justify-center px-5 py-12 sm:px-8 md:px-10 lg:px-12">
         {/* ================= HEADING ================= */}
         <div className="mb-10 text-left sm:mb-12">
-          <h1 className="mb-2 text-3xl font-bold text-yellow-400 sm:text-4xl md:text-5xl">
+          <h2 className="mb-2 text-3xl font-bold text-yellow-400 sm:text-4xl md:text-5xl">
             The Pack Hub
-          </h1>
+          </h2>
 
           <p className="mb-5 text-lg text-white sm:text-xl">
             The numbers of our group

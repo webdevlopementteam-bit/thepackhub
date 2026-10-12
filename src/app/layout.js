@@ -16,6 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
+  metadataBase: new URL("https://www.thepackhub.in"),
   title: "The Pack Hub",
   description: "Bakery Items and Manufacturer and Supplier",
   icons: {

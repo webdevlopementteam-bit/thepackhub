@@ -2,7 +2,23 @@ import Image from "next/image";
 import Link from "next/link";
 import { CalendarDays, User } from "lucide-react";
 
+export const metadata = {
+  alternates: {
+    canonical: "/blog",
+  },
+};
+
 const blogs = [
+  {
+    title:
+      "What's the Difference Between Retail and Wholesale Packaging? A Complete Guide by a Packaging Company in Delhi (2026)",
+    image: "/blog/img2.png",
+    description:
+      "Confused between retail and wholesale packaging? This simple guide by The Pack Hub — a trusted packaging company in Delhi — breaks it all down for you. Perfect for brands, sellers, and businesses of all sizes.",
+    date: "October 12, 2026",
+    author: "The Pack Hub",
+    href: "/blog/retail-vs-wholesale-packaging",
+  },
   {
     title: "Why The Pack Hub is Every Baker’s First Choice",
     image: "/blog/img1.png",

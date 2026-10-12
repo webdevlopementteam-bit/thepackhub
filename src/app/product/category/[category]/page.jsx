@@ -11,6 +11,46 @@ function slugify(text) {
     .replace(/(^-|-$)/g, "");
 }
 
+const categoryContent = {
+  moulds: {
+    metaTitle: "Buy Paper Moulds for Baking from The Pack Hub",
+    metaDescription:
+      "Buy paper moulds for baking in bulk from The Pack Hub. Ideal for bakeries, cafes and home bakers. Multiple shapes and sizes available. Shop now!",
+    keywords: [
+      "Paper Moulds for Baking",
+      "Curl Cup Mould",
+      "Plum Cake Mould",
+      "Plumpy Mould",
+      "Round Plum Cake mould",
+    ],
+    h1: "Paper Moulds for Baking",
+    description: (
+      <>
+        Looking for reliable{" "}
+        <strong className="font-semibold text-white">
+          paper moulds for baking
+        </strong>
+        ? The Pack Hub offers brownie moulds, plum cake moulds, round plum cake moulds, panettone baking mould cups, curl cup moulds and plumpy moulds for bakeries, cafes, caterers and home bakers. Paper moulds keep your cakes in shape while baking, make serving and packing easy, and give your products a clean, professional look without the hassle of greasing or washing heavy trays. They are hygienic, simple to handle and ideal for daily production and festive gifting. We supply paper moulds for baking in bulk to businesses of every size. Contact The Pack Hub today for samples, pricing and bulk orders.
+      </>
+    ),
+  },
+};
+
+export async function generateMetadata({ params }) {
+  const { category } = await params;
+  const content = categoryContent[category];
+  const alternates = { canonical: `/product/category/${category}` };
+
+  if (!content) return { alternates };
+
+  return {
+    title: content.metaTitle,
+    description: content.metaDescription,
+    keywords: content.keywords,
+    alternates,
+  };
+}
+
 export function generateStaticParams() {
   const categories = [...new Set(products.map((product) => product.category))];
 
@@ -27,6 +67,7 @@ export default async function CategoryPage({ params }) {
   );
 
   const categoryName = categoryProducts[0]?.category || category;
+  const content = categoryContent[category];
 
   /* =====================================================
      CATEGORY NOT FOUND
@@ -149,7 +190,7 @@ export default async function CategoryPage({ params }) {
               {/* Title */}
 
               <h1 className="text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
-                {categoryName}
+                {content?.h1 || categoryName}
               </h1>
 
               {/* Accent */}
@@ -159,12 +200,16 @@ export default async function CategoryPage({ params }) {
               {/* Description */}
 
               <p className="mt-5 max-w-2xl text-sm leading-7 text-white/65 sm:text-base">
-                Explore our complete range of{" "}
-                <span className="font-semibold text-white">
-                  {categoryName.toLowerCase()}
-                </span>{" "}
-                products, designed with quality and reliability for your
-                requirements.
+                {content?.description || (
+                  <>
+                    Explore our complete range of{" "}
+                    <span className="font-semibold text-white">
+                      {categoryName.toLowerCase()}
+                    </span>{" "}
+                    products, designed with quality and reliability for your
+                    requirements.
+                  </>
+                )}
               </p>
             </div>
 
