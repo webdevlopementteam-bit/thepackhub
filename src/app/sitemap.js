@@ -26,6 +26,8 @@ const staticRoutes = [
   "/contact",
   "/blog",
   "/blog/retail-vs-wholesale-packaging",
+  "/blog/best-packaging-manufacturer-for-export-from-india",
+  "/blog/eco-friendly-packaging-supplier-in-india",
 ];
 
 export default function sitemap() {

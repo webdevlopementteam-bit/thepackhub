@@ -11,6 +11,26 @@ export const metadata = {
 const blogs = [
   {
     title:
+      "Best Packaging Manufacturer for Export From India: The Complete Guide for 2026",
+    image: "/blog/img1.webp",
+    description:
+      "Looking for the best packaging manufacturer for export from India? The Pack Hub offers export-grade bakery packaging, custom solutions & consistent quality.",
+    date: "October 16, 2026",
+    author: "The Pack Hub",
+    href: "/blog/best-packaging-manufacturer-for-export-from-india",
+  },
+  {
+    title:
+      "How to Choose the Best Eco Friendly Packaging Supplier in India for Ecommerce Brands in 2026",
+    image: "/blog/img3.webp",
+    description:
+      "The Pack Hub is a trusted eco friendly packaging supplier for ecommerce brands in India. Biodegradable, custom-printed, and courier-proof packaging solutions.",
+    date: "October 16, 2026",
+    author: "The Pack Hub",
+    href: "/blog/eco-friendly-packaging-supplier-in-india",
+  },
+  {
+    title:
       "What's the Difference Between Retail and Wholesale Packaging? A Complete Guide by a Packaging Company in Delhi (2026)",
     image: "/blog/img2.webp",
     description:
@@ -18,33 +38,6 @@ const blogs = [
     date: "October 12, 2026",
     author: "The Pack Hub",
     href: "/blog/retail-vs-wholesale-packaging",
-  },
-  {
-    title: "Why The Pack Hub is Every Baker’s First Choice",
-    image: "/blog/img1.webp",
-    description:
-      "When it comes to choosing baking tools, quality and reliability are paramount. The Pack Hub has established itself as a trusted partner for bakers by offering paper cups that meet the highest standards of performance, design, and sustainability. Here’s why…",
-    date: "December 18, 2024",
-    author: "bizmartbharat@gmail.com",
-    href: "/why-the-pack-hub-is-every-bakers-first-choice/",
-  },
-  {
-    title: "Bake Sustainably with The Pack Hub’s Eco-Friendly Paper Cups",
-    image: "/blog/img2.webp",
-    description:
-      "In today’s world, sustainability has become a cornerstone of responsible living. This includes every aspect of our lives, from the food we consume to the tools we use. For bakers, The Pack Hub offers a way to bake responsibly with…",
-    date: "December 18, 2024",
-    author: "bizmartbharat@gmail.com",
-    href: "/bake-sustainably-with-the-pack-hubs-eco-friendly-paper-cups/",
-  },
-  {
-    title: "The Pack Hub: Redefining Baking Elegance with Premium Paper Cups",
-    image: "/blog/img3.webp",
-    description:
-      "When it comes to baking, every detail matters. From the ingredients used to the tools chosen, each element contributes to creating the perfect baked treat. Among these tools, the humble paper cup is often overlooked, yet it plays a critical…",
-    date: "December 18, 2024",
-    author: "bizmartbharat@gmail.com",
-    href: "/the-pack-hub-redefining-baking-elegance-with-premium-paper-cups/",
   },
 ];
 
