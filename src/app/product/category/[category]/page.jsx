@@ -113,7 +113,7 @@ export default async function CategoryPage({ params }) {
         ================================================= */}
 
         <Image
-          src="/breadcrumb/b1.png"
+          src="/breadcrumb/b1.webp"
           alt=""
           fill
           priority

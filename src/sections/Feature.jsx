@@ -45,7 +45,7 @@ export default function Feature() {
           {/* Right Image */}
           <div className="relative h-[280px] overflow-hidden rounded-2xl sm:h-[340px] lg:h-[380px]">
             <Image
-              src="/features/img1.jpg"
+              src="/features/img1.webp"
               alt="Baking Paper Cups"
               fill
               className="object-cover"

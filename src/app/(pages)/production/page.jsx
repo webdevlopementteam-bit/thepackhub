@@ -17,16 +17,16 @@ import { ArrowRight } from "lucide-react";
 ===================================================== */
 
 const productionImages = [
-  "/production/p1.jpg",
-  "/production/p2.jpg",
-  "/production/p3.jpg",
-  "/production/p4.jpg",
-  "/production/p5.jpg",
-  "/production/p6.jpg",
-  "/production/p7.jpg",
-  "/production/p8.jpg",
-  "/production/p9.jpg",
-  "/production/p10.jpg",
+  "/production/p1.webp",
+  "/production/p2.webp",
+  "/production/p3.webp",
+  "/production/p4.webp",
+  "/production/p5.webp",
+  "/production/p6.webp",
+  "/production/p7.webp",
+  "/production/p8.webp",
+  "/production/p9.webp",
+  "/production/p10.webp",
 ];
 
 /* =====================================================
@@ -231,7 +231,7 @@ export default function Production() {
                 {/* Image */}
                 <div className="relative aspect-[4/3] w-full overflow-hidden sm:aspect-[16/10] md:aspect-[4/3] lg:aspect-[16/11]">
                   <Image
-                    src="/production/research.jpg"
+                    src="/production/research.webp"
                     alt="Innovation and research laboratory"
                     fill
                     sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 50vw"

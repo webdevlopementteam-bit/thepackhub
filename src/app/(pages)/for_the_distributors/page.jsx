@@ -131,7 +131,7 @@ export default function DistributorsPage() {
                 <div className="relative overflow-hidden rounded-[2rem] border border-black/10 bg-white p-2 shadow-[0_25px_70px_rgba(0,0,0,0.12)] sm:p-3">
                   <div className="relative aspect-[4/3] overflow-hidden rounded-[1.5rem]">
                     <Image
-                      src="/for_the_distributers/img1.jpg"
+                      src="/for_the_distributers/img1.webp"
                       alt="Products for every customer"
                       fill
                       className="object-cover transition-transform duration-700 group-hover:scale-105"
@@ -168,7 +168,7 @@ export default function DistributorsPage() {
               <div className="relative overflow-hidden rounded-[2rem] border border-black/10 bg-white p-2 shadow-[0_25px_70px_rgba(0,0,0,0.12)] sm:p-3">
                 <div className="relative aspect-[4/3] overflow-hidden rounded-[1.5rem]">
                   <Image
-                    src="/for_the_distributers/img2.jpg"
+                    src="/for_the_distributers/img2.webp"
                     alt="Maximum reliability in deliveries"
                     fill
                     className="object-cover transition-transform duration-700 group-hover:scale-105"
@@ -253,7 +253,7 @@ export default function DistributorsPage() {
           <div className="group relative overflow-hidden rounded-[2rem] border border-white/10 shadow-[0_30px_90px_rgba(0,0,0,0.35)] sm:rounded-[2.5rem]">
             <div className="relative h-[400px] sm:h-[450px] lg:h-[520px]">
               <Image
-                src="/for_the_distributers/bootom.jpg"
+                src="/for_the_distributers/bootom.webp"
                 alt="The Catalogue of The Pack Hub Products"
                 fill
                 className="object-cover transition-transform duration-1000 group-hover:scale-105"

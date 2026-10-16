@@ -25,7 +25,7 @@ export default function PackHub() {
     <section className="relative min-h-screen w-full overflow-hidden text-white">
       {/* Background */}
       <Image
-        src="/packHub/world-bg1.png"
+        src="/packHub/world-bg1.webp"
         alt="World Map"
         fill
         priority

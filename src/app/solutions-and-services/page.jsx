@@ -14,7 +14,7 @@ const solutions = [
       "We manage orders accurately and quickly and guarantee full reliability in deliveries.",
     image: "/solutions_services/img2.webp",
     imageAlt: "Solutions for distributors",
-    icon: "/icon/icon.png",
+    icon: "/icon/icon.webp",
     iconAlt: "For distributors",
     reverse: false,
   },
@@ -27,7 +27,7 @@ const solutions = [
       "For confectioners and food professionals, we offer solutions that speed up and simplify production.",
     image: "/solutions_services/birthday.webp",
     imageAlt: "Solutions for confectioners",
-    icon: "/icon/birthday.png",
+    icon: "/icon/birthday.webp",
     iconAlt: "For confectioners",
     reverse: true,
   },
@@ -40,7 +40,7 @@ const solutions = [
       "We create packaging suitable for retail and customizable with your own brand.",
     image: "/solutions_services/for_large_retailers.webp",
     imageAlt: "Solutions for large retailers",
-    icon: "/icon/for_large_retailers.png",
+    icon: "/icon/for_large_retailers.webp",
     iconAlt: "For large retailers",
     reverse: false,
   },
@@ -70,7 +70,7 @@ export default function SolutionsAndServicesPage() {
               {/* Logo */}
               <div className="mb-6">
                 <Image
-                  src="/solutions_services/solutions_services_logo.png"
+                  src="/solutions_services/solutions_services_logo.webp"
                   alt="Solutions and Services"
                   width={180}
                   height={80}
@@ -130,7 +130,7 @@ export default function SolutionsAndServicesPage() {
               <div className="group relative overflow-hidden rounded-2xl border border-black/10 bg-white shadow-[0_18px_50px_rgba(0,0,0,0.10)] transition-all duration-500 hover:-translate-y-1 hover:border-[#b09220]/40 hover:shadow-[0_25px_65px_rgba(0,0,0,0.14)] sm:rounded-3xl">
                 <div className="relative aspect-[16/9] overflow-hidden">
                   <Image
-                    src="/solutions_services/img1.jpg"
+                    src="/solutions_services/img1.webp"
                     alt="The Pack Hub industry solutions"
                     fill
                     className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"

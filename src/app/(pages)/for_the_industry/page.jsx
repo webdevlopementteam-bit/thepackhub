@@ -14,14 +14,14 @@ import "swiper/css/navigation";
 ===================================================== */
 
 const galleryImages = [
-  "/for_the_industry/p1.jpg",
-  "/for_the_industry/p2.jpg",
-  "/for_the_industry/p3.jpg",
+  "/for_the_industry/p1.webp",
+  "/for_the_industry/p2.webp",
+  "/for_the_industry/p3.webp",
   "/for_the_industry/p4.webp",
-  "/for_the_industry/p5.jpg",
-  "/for_the_industry/p6.jpg",
-  "/for_the_industry/p7.jpg",
-  "/for_the_industry/p8.jpg",
+  "/for_the_industry/p5.webp",
+  "/for_the_industry/p6.webp",
+  "/for_the_industry/p7.webp",
+  "/for_the_industry/p8.webp",
 ];
 
 /* =====================================================
@@ -34,7 +34,7 @@ const industrySections = [
     label: "Food Production",
     titleStart: "From the",
     titleHighlight: "oven to the shelf",
-    image: "/for_the_industry/From the oven.jpg",
+    image: "/for_the_industry/From the oven.webp",
     imageAlt: "From the oven to the shelf",
 
     description: (
@@ -68,7 +68,7 @@ const industrySections = [
     label: "Custom Design",
     titleStart: "Attention to",
     titleHighlight: "details",
-    image: "/for_the_industry/Attention to details.jpg",
+    image: "/for_the_industry/Attention to details.webp",
     imageAlt: "Attention to details",
 
     description: (
@@ -95,7 +95,7 @@ const industrySections = [
     label: "Tailor-Made Solutions",
     titleStart: "Ad hoc",
     titleHighlight: "solutions",
-    image: "/for_the_industry/Ad hoc solutions.avif",
+    image: "/for_the_industry/Ad hoc solutions.webp",
     imageAlt: "Ad hoc solutions",
 
     description: (
@@ -133,7 +133,7 @@ const industrySections = [
     label: "Complete Industry Service",
     titleStart: "A",
     titleHighlight: "360° service",
-    image: "/for_the_industry/A 360.jpg",
+    image: "/for_the_industry/A 360.webp",
     imageAlt: "A 360 degree service",
 
     description: (
@@ -467,7 +467,7 @@ export default function ForTheIndustryPage() {
               {/* Tall Image */}
               <div className="relative h-[320px] overflow-hidden sm:h-[400px] md:h-[480px] lg:h-[560px]">
                 <Image
-                  src="/for_the_industry/cover.jpg"
+                  src="/for_the_industry/cover.webp"
                   alt="The Pack Hub products"
                   fill
                   className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
@@ -493,7 +493,7 @@ export default function ForTheIndustryPage() {
           <div className="group relative min-h-[420px] overflow-hidden rounded-2xl shadow-[0_25px_70px_rgba(0,0,0,0.18)] sm:min-h-[500px] sm:rounded-3xl">
             {/* Background Image */}
             <Image
-              src="/for_the_industry/bootom.jpg"
+              src="/for_the_industry/bootom.webp"
               alt="The Pack Hub Products Catalogue"
               fill
               className="object-cover transition-transform duration-700 group-hover:scale-105"

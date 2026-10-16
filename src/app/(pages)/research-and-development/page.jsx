@@ -141,7 +141,7 @@ export default function ResearchAndDevelopmentPage() {
                 <div className="group relative overflow-hidden rounded-2xl border border-black/10 bg-white shadow-[0_18px_50px_rgba(0,0,0,0.09)] transition-all duration-500 hover:-translate-y-1 hover:border-[#D4AF37]/40 hover:shadow-[0_22px_60px_rgba(212,175,55,0.15)] sm:rounded-3xl">
                   <div className="relative aspect-[4/3] overflow-hidden">
                     <Image
-                      src="/research-and-development/img1.png"
+                      src="/research-and-development/img1.webp"
                       alt="Punto Rosso research and development laboratory"
                       fill
                       className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
@@ -177,7 +177,7 @@ export default function ResearchAndDevelopmentPage() {
                 <div className="group relative overflow-hidden rounded-2xl border border-black/10 bg-white shadow-[0_18px_50px_rgba(0,0,0,0.09)] transition-all duration-500 hover:-translate-y-1 hover:border-[#49308F]/40 hover:shadow-[0_22px_60px_rgba(73,48,143,0.15)] sm:rounded-3xl">
                   <div className="relative aspect-[4/3] overflow-hidden">
                     <Image
-                      src="/research-and-development/img2.png"
+                      src="/research-and-development/img2.webp"
                       alt="Cutting-edge technology and production machines"
                       fill
                       className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"

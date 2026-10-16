@@ -6,13 +6,13 @@ import Link from "next/link";
 
 const images = [
   {
-    desktop: "/hero/hero-1.jpeg",
-    mobile: "/hero/m1.png",
+    desktop: "/hero/hero-1.webp",
+    mobile: "/hero/m1.webp",
     alt: "Bakery Packaging Banner 1",
   },
   {
-    desktop: "/hero/hero-2.jpg",
-    mobile: "/hero/m2.png",
+    desktop: "/hero/hero-2.webp",
+    mobile: "/hero/m2.webp",
     alt: "Bakery Packaging Banner 2",
   },
 ];

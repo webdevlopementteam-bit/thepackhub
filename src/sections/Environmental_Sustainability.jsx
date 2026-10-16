@@ -8,7 +8,7 @@ export default function Environmental_Sustainability() {
       <section className="relative w-full h-[500px] flex items-center justify-center">
         {/* Background Image */}
         <Image
-          src={"/environment/img1.jpg"}
+          src={"/environment/img1.webp"}
           alt="Environmental Sustainability"
           fill
           className="object-cover brightness-75"

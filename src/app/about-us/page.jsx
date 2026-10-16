@@ -87,7 +87,7 @@ export default function AboutSection() {
           {/* IMAGE */}
           <div className="relative overflow-hidden rounded-2xl">
             <Image
-              src="/about/about.jpg"
+              src="/about/about.webp"
               alt="The Pack Hub Production"
               width={800}
               height={600}
@@ -99,7 +99,7 @@ export default function AboutSection() {
           <div className="text-left">
             <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-xl border-2 border-[#4D2785] p-2 sm:h-20 sm:w-20 sm:p-3">
               <Image
-                src="/icon/icon.png"
+                src="/icon/icon.webp"
                 alt="Production icon"
                 width={50}
                 height={50}

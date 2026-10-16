@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, ArrowRight, Check, Package, Sparkles } from "lucide-react";
-import { products } from "@/app/lib/products";
+import { products, unlistedProducts } from "@/app/lib/products";
 import { productContent } from "@/app/lib/productContent";
 
 /* =====================================================
@@ -20,8 +20,10 @@ function slugify(text) {
    STATIC PARAMS
 ===================================================== */
 
+const allProducts = [...products, ...unlistedProducts];
+
 export function generateStaticParams() {
-  return products.map((product) => ({
+  return allProducts.map((product) => ({
     slug: product.slug || slugify(product.name),
   }));
 }
@@ -72,7 +74,7 @@ function LabelledText({ text, labelled }) {
 export default async function ProductPage({ params }) {
   const { slug } = await params;
 
-  const product = products.find(
+  const product = allProducts.find(
     (item) => (item.slug || slugify(item.name)) === slug,
   );
 

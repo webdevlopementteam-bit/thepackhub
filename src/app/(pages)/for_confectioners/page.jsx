@@ -130,7 +130,7 @@ export default function ForConfectionersPage() {
                 <div className="group relative overflow-hidden rounded-2xl border border-black/10 bg-white shadow-[0_20px_60px_rgba(0,0,0,0.1)] transition-all duration-500 hover:-translate-y-1 hover:border-[#D4AF37]/40 hover:shadow-[0_25px_70px_rgba(212,175,55,0.16)] sm:rounded-3xl">
                   <div className="relative aspect-[4/3] overflow-hidden">
                     <Image
-                      src="/for_confectioners/Novaservice.jpg"
+                      src="/for_confectioners/Novaservice.webp"
                       alt="Novaservice at the service of pastry chefs"
                       fill
                       className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
@@ -164,7 +164,7 @@ export default function ForConfectionersPage() {
                 <div className="group relative overflow-hidden rounded-2xl border border-black/10 bg-white shadow-[0_20px_60px_rgba(0,0,0,0.1)] transition-all duration-500 hover:-translate-y-1 hover:border-[#49308F]/40 hover:shadow-[0_25px_70px_rgba(73,48,143,0.16)] sm:rounded-3xl">
                   <div className="relative aspect-[4/3] overflow-hidden">
                     <Image
-                      src="/for_confectioners/A carefully refined product.jpg"
+                      src="/for_confectioners/A carefully refined product.webp"
                       alt="A carefully refined product"
                       fill
                       className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
@@ -279,7 +279,7 @@ export default function ForConfectionersPage() {
                 <div className="group relative overflow-hidden rounded-2xl border border-black/10 bg-white shadow-[0_20px_60px_rgba(0,0,0,0.1)] transition-all duration-500 hover:-translate-y-1 hover:border-[#D4AF37]/40 hover:shadow-[0_25px_70px_rgba(212,175,55,0.16)] sm:rounded-3xl">
                   <div className="relative aspect-[4/3] overflow-hidden">
                     <Image
-                      src="/for_confectioners/Attention to details.jpg"
+                      src="/for_confectioners/Attention to details.webp"
                       alt="Attention to details"
                       fill
                       className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
@@ -307,7 +307,7 @@ export default function ForConfectionersPage() {
           <div className="group relative min-h-[420px] overflow-hidden rounded-2xl shadow-[0_25px_70px_rgba(0,0,0,0.18)] sm:min-h-[500px] sm:rounded-3xl">
             {/* Background Image */}
             <Image
-              src="/for_confectioners/bootom.jpg"
+              src="/for_confectioners/bootom.webp"
               alt="The Pack Hub Products Catalogue"
               fill
               className="object-cover transition-transform duration-700 group-hover:scale-105"

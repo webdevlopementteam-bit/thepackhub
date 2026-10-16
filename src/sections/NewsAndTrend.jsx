@@ -12,7 +12,7 @@ export default function NewsTrends() {
         <div className="text-center">
           <div className="relative w-full h-64">
             <Image
-              src="/news_trand/sweet-paper-cup-500x500-1.jpg"
+              src="/news_trand/sweet-paper-cup-500x500-1.webp"
               alt="Cupcake Liners"
               fill
               className="object-cover rounded-xl"
@@ -24,7 +24,7 @@ export default function NewsTrends() {
         <div className="text-center">
           <div className="relative w-full h-64">
             <Image
-              src="/news_trand/Easy-Cupcakes-3.jpg"
+              src="/news_trand/Easy-Cupcakes-3.webp"
               alt="Cupcakes"
               fill
               className="object-cover rounded-xl"
@@ -36,7 +36,7 @@ export default function NewsTrends() {
         <div className="text-center">
           <div className="relative w-full h-64">
             <Image
-              src="/news_trand/laddu-paper-katori-with-print.jpeg"
+              src="/news_trand/laddu-paper-katori-with-print.webp"
               alt="Eco Liners"
               fill
               className="object-cover rounded-xl"

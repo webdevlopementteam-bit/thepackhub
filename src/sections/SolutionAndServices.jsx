@@ -2,17 +2,17 @@ import Image from "next/image";
 
 const services = [
   {
-    image: "/solution_Service/cake1.png",
+    image: "/solution_Service/cake1.webp",
     title: "For the Industry",
     bg: "bg-[#FAE578]",
   },
   {
-    image: "/solution_Service/cake2.png",
+    image: "/solution_Service/cake2.webp",
     title: "For the Distributors",
     bg: "bg-blue-200",
   },
   {
-    image: "/solution_Service/cake3.png",
+    image: "/solution_Service/cake3.webp",
     title: "For Large Retailers",
     bg: "bg-pink-200",
   },

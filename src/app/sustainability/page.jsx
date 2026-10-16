@@ -217,7 +217,7 @@ export default function SustainabilityPage() {
 
             <div className="md:sticky md:top-24">
               <SectionImage
-                src="/sustainability/img1.png"
+                src="/sustainability/img1.webp"
                 alt="Environmental Responsibility"
               />
             </div>

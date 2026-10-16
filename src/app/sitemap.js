@@ -1,4 +1,4 @@
-import { products } from "@/app/lib/products";
+import { products, unlistedProducts } from "@/app/lib/products";
 
 const SITE_URL = "https://www.thepackhub.in";
 
@@ -31,7 +31,7 @@ const staticRoutes = [
 export default function sitemap() {
   const lastModified = new Date();
 
-  const productRoutes = products.map(
+  const productRoutes = [...products, ...unlistedProducts].map(
     (product) => `/product/${product.slug || slugify(product.name)}`,
   );
 

@@ -2,7 +2,7 @@ export const products = [
   {
     name: "BAKING PAPER CUPS",
     category: "Paper Cups",
-    image: "/products/BAKING PAPER CUPS.jpg",
+    image: "/images/products/BAKING PAPER CUPS.webp",
     data: {
       bulletPointData:
         "Premium quality baking paper cups by The Pack Hub ,Trusted Baking Paper Cups Manufacturer in Delhi ,Made from food-grade, greaseproof paper,Heat-resistant & perfect for baking cupcakes & muffins ,Non-stick surface for easy release ,Available in multiple vibrant colors,Ideal for bakeries, cafes & home baking ,Bulk supply available at competitive prices",
@@ -16,7 +16,7 @@ export const products = [
 
     category: "Moulds",
 
-    image: "/products/Brownie Mould.jpeg",
+    image: "/images/products/Brownie Mould.webp",
 
     data: {
       bulletPointData: false,
@@ -164,7 +164,7 @@ export const products = [
 
     category: "Paper Cups",
 
-    image: "/products/Burger Paper.jpg",
+    image: "/images/products/Burger Paper.webp",
 
     data: {
       bulletPointData: false,
@@ -191,7 +191,7 @@ export const products = [
 
     category: "SHEET",
 
-    image: "/products/Butter Paper.webp",
+    image: "/images/products/Butter Paper.webp",
 
     data: {
       bulletPointData: false,
@@ -388,7 +388,7 @@ export const products = [
 
     category: "CAKE",
 
-    image: "/products/Cake Base Board.avif",
+    image: "/images/products/Cake Base Board.webp",
 
     data: {
       bulletPointData: false,
@@ -435,7 +435,7 @@ export const products = [
 
     category: "CAKE",
 
-    image: "/products/Cake Box.jpg",
+    image: "/images/products/Cake Box.webp",
 
     data: {
       bulletPointData: false,
@@ -469,7 +469,7 @@ export const products = [
 
     category: "Paper Cups",
 
-    image: "/products/Cup Cake Liner.webp",
+    image: "/images/products/Cup Cake Liner.webp",
 
     data: {
       bulletPointData: [
@@ -722,7 +722,7 @@ export const products = [
 
     category: "Paper Cups",
 
-    image: "/products/Cup Cake Mould.webp",
+    image: "/images/products/Cup Cake Mould.webp",
 
     data: {
       bulletPointData: [
@@ -752,7 +752,7 @@ export const products = [
 
     category: "Moulds",
 
-    image: "/products/Curl Cup Mould.jpeg",
+    image: "/images/products/Curl Cup Mould.webp",
 
     data: {
       bulletPointData: false,
@@ -778,7 +778,7 @@ export const products = [
 
     category: "Envelop",
 
-    image: "/products/Food Wrapping Envelop.jpeg",
+    image: "/images/products/Food Wrapping Envelop.webp",
 
     data: {
       bulletPointData: false,
@@ -805,7 +805,7 @@ export const products = [
 
     category: "Paper Cups",
 
-    image: "/products/Food Wrapping Roll.jpg",
+    image: "/images/products/Food Wrapping Roll.webp",
 
     data: {
       bulletPointData: false,
@@ -831,7 +831,7 @@ export const products = [
 
     category: "Paper Cups",
 
-    image: "/products/Laddu Katori Manufacturer.jpg",
+    image: "/images/products/Laddu Katori Manufacturer.webp",
 
     data: {
       bulletPointData: [
@@ -990,7 +990,7 @@ export const products = [
 
     category: "Paper Cups",
 
-    image: "/products/Ladoo Paper Cups.jpg",
+    image: "/images/products/Ladoo Paper Cups.webp",
 
     data: {
       bulletPointData: [
@@ -1014,7 +1014,7 @@ export const products = [
 
     category: "Paper Cups",
 
-    image: "/products/Muffin Paper Cup.jpeg",
+    image: "/images/products/Muffin Paper Cup.webp",
 
     data: {
       bulletPointData: [
@@ -1044,7 +1044,7 @@ export const products = [
 
     category: "Paper Cups",
 
-    image: "/products/Oval Paper Cup.jpg",
+    image: "/images/products/Oval Paper Cup.webp",
 
     data: {
       bulletPointData: false,
@@ -1076,7 +1076,7 @@ export const products = [
 
     category: "Moulds",
 
-    image: "/products/Panettone Baking Mould Cup.jpg",
+    image: "/images/products/Panettone Baking Mould Cup.webp",
 
     data: {
       bulletPointData: false,
@@ -1264,7 +1264,7 @@ export const products = [
 
     category: "Paper Cups",
 
-    image: "/products/Paper Envelop.jpg",
+    image: "/images/products/Paper Envelop.webp",
 
     data: {
       bulletPointData: false,
@@ -1291,7 +1291,7 @@ export const products = [
 
     category: "Sheet",
 
-    image: "/products/Paper Wrap.jpg",
+    image: "/images/products/Paper Wrap.webp",
 
     data: {
       bulletPointData: [
@@ -1313,7 +1313,7 @@ export const products = [
 
     category: "CAKE",
 
-    image: "/products/Pastry Base.jpg",
+    image: "/images/products/Pastry Base.webp",
 
     data: {
       bulletPointData: false,
@@ -1340,7 +1340,7 @@ export const products = [
 
     category: "Moulds",
 
-    image: "/products/Pizza Box.jpeg",
+    image: "/images/products/Pizza Box.webp",
 
     data: {
       bulletPointData: false,
@@ -1365,7 +1365,7 @@ export const products = [
 
     category: "Moulds",
 
-    image: "/products/Plum cake Mould.webp",
+    image: "/images/products/Plum cake Mould.webp",
 
     data: {
       bulletPointData: false,
@@ -1601,7 +1601,7 @@ export const products = [
 
     category: "Moulds",
 
-    image: "/products/Plumpy Mould.png",
+    image: "/images/products/Plumpy Mould.webp",
 
     data: {
       bulletPointData: false,
@@ -1625,7 +1625,7 @@ export const products = [
 
     category: "Paper Cups",
 
-    image: "/products/Rectangular paper cups.jpg",
+    image: "/images/products/Rectangular paper cups.webp",
 
     data: {
       bulletPointData: false,
@@ -1651,7 +1651,7 @@ export const products = [
 
     category: "Paper Cups",
 
-    image: "/products/Round Paper Cup.jpg",
+    image: "/images/products/Round Paper Cup.webp",
 
     data: {
       bulletPointData: false,
@@ -1703,7 +1703,7 @@ export const products = [
 
     category: "Moulds",
 
-    image: "/products/Round Plum Cake mould.png",
+    image: "/images/products/Round Plum Cake mould.webp",
 
     data: {
       bulletPointData: false,
@@ -1730,7 +1730,7 @@ export const products = [
 
     category: "Paper Cups",
 
-    image: "/products/Royal Cups.jpeg",
+    image: "/images/products/Royal Cups.webp",
 
     data: {
       bulletPointData: [
@@ -1924,7 +1924,7 @@ export const products = [
 
     category: "Paper Cups",
 
-    image: "/products/Square Paper cup.webp",
+    image: "/images/products/Square Paper cup.webp",
 
     data: {
       bulletPointData: false,
@@ -1950,7 +1950,7 @@ export const products = [
 
     category: "Sheet",
 
-    image: "/products/Wrapping Sheet.jpg",
+    image: "/images/products/Wrapping Sheet.webp",
 
     data: {
       bulletPointData: false,
@@ -1973,4 +1973,18 @@ export const products = [
       descriptionData: false,
     },
   },
+];
+
+/*
+  Unlisted products: they get their own detail page but are not shown
+  on the products page, category pages or related products.
+*/
+const findProduct = (name) => products.find((product) => product.name === name);
+
+export const unlistedProducts = [
+  { ...findProduct("Butter Paper"), slug: "butter-paper-uae" },
+  { ...findProduct("Muffin Paper Cup"), slug: "muffin-paper-cup-exporter-usa" },
+  { ...findProduct("BAKING PAPER CUPS"), slug: "baking-paper-cups-dubai" },
+  { ...findProduct("Cup Cake Liner"), slug: "cup-cake-liner-canada" },
+  { ...findProduct("Cake Box"), slug: "custom-cake-boxes-qatar" },
 ];

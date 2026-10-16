@@ -18,12 +18,12 @@ const navigation = [
       {
         label: "Production",
         href: "/production",
-        image: "/breadcrumb/b1.png",
+        image: "/breadcrumb/b1.webp",
       },
       {
         label: "Certifications",
         href: "/certifications",
-        image: "/breadcrumb/b2.png",
+        image: "/breadcrumb/b2.webp",
       },
     ],
   },
@@ -41,12 +41,12 @@ const navigation = [
       {
         label: "For The Industry",
         href: "/for_the_industry",
-        image: "/breadcrumb/b1.png",
+        image: "/breadcrumb/b1.webp",
       },
       {
         label: "For The Distributors",
         href: "/for_the_distributors",
-        image: "/breadcrumb/b2.png",
+        image: "/breadcrumb/b2.webp",
       },
       {
         label: "For Confectioners",
@@ -56,7 +56,7 @@ const navigation = [
       {
         label: "For Large Retailers",
         href: "/for_large_retailers",
-        image: "/breadcrumb/b4.jpg",
+        image: "/breadcrumb/b4.webp",
       },
     ],
   },
@@ -64,7 +64,7 @@ const navigation = [
   {
     label: "Contact",
     href: "/contact",
-    image: "/breadcrumb/b4.jpg",
+    image: "/breadcrumb/b4.webp",
   },
 
   {
@@ -79,12 +79,12 @@ const navigation = [
       {
         label: "Research & Development",
         href: "/research-and-development",
-        image: "/breadcrumb/b1.png",
+        image: "/breadcrumb/b1.webp",
       },
       {
         label: "Blog",
         href: "/blog",
-        image: "/breadcrumb/b2.png",
+        image: "/breadcrumb/b2.webp",
       },
     ],
   },
@@ -144,7 +144,7 @@ export default function Breadcrumb() {
     Use image directly from the current page.
     This makes every dropdown page show its own image.
   */
-  const image = currentPage.image || "/breadcrumb/b1.png";
+  const image = currentPage.image || "/breadcrumb/b1.webp";
 
   const Title = pagesWithOwnH1.includes(pathname) ? "p" : "h1";
 

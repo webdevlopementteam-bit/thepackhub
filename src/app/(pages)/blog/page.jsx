@@ -12,7 +12,7 @@ const blogs = [
   {
     title:
       "What's the Difference Between Retail and Wholesale Packaging? A Complete Guide by a Packaging Company in Delhi (2026)",
-    image: "/blog/img2.png",
+    image: "/blog/img2.webp",
     description:
       "Confused between retail and wholesale packaging? This simple guide by The Pack Hub — a trusted packaging company in Delhi — breaks it all down for you. Perfect for brands, sellers, and businesses of all sizes.",
     date: "October 12, 2026",
@@ -21,7 +21,7 @@ const blogs = [
   },
   {
     title: "Why The Pack Hub is Every Baker’s First Choice",
-    image: "/blog/img1.png",
+    image: "/blog/img1.webp",
     description:
       "When it comes to choosing baking tools, quality and reliability are paramount. The Pack Hub has established itself as a trusted partner for bakers by offering paper cups that meet the highest standards of performance, design, and sustainability. Here’s why…",
     date: "December 18, 2024",
@@ -30,7 +30,7 @@ const blogs = [
   },
   {
     title: "Bake Sustainably with The Pack Hub’s Eco-Friendly Paper Cups",
-    image: "/blog/img2.png",
+    image: "/blog/img2.webp",
     description:
       "In today’s world, sustainability has become a cornerstone of responsible living. This includes every aspect of our lives, from the food we consume to the tools we use. For bakers, The Pack Hub offers a way to bake responsibly with…",
     date: "December 18, 2024",
@@ -39,7 +39,7 @@ const blogs = [
   },
   {
     title: "The Pack Hub: Redefining Baking Elegance with Premium Paper Cups",
-    image: "/blog/img3.png",
+    image: "/blog/img3.webp",
     description:
       "When it comes to baking, every detail matters. From the ingredients used to the tools chosen, each element contributes to creating the perfect baked treat. Among these tools, the humble paper cup is often overlooked, yet it plays a critical…",
     date: "December 18, 2024",
