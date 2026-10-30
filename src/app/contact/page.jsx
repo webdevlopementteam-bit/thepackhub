@@ -3,6 +3,10 @@
 import React, { useState } from "react";
 import { Mail, MapPin, Phone, Send, ShieldCheck } from "lucide-react";
 import { z } from "zod";
+import {
+  WEB3FORMS_ACCESS_KEY,
+  WEB3FORMS_ENDPOINT,
+} from "@/app/lib/web3forms";
 
 /* =========================================================
    COMPANY / CONTACT DETAILS
@@ -147,7 +151,7 @@ export default function ContactUsPage() {
       /*
         WEB3FORMS ACCESS KEY
       */
-      web3FormData.append("access_key", "ea1eb459-5e8f-4dfb-a129-2e425e873320");
+      web3FormData.append("access_key", WEB3FORMS_ACCESS_KEY);
 
       web3FormData.append("name", `${values.firstName} ${values.lastName}`);
 
@@ -165,7 +169,7 @@ export default function ContactUsPage() {
 
       web3FormData.append("from_name", "The Pack Hub Website");
 
-      const response = await fetch("https://api.web3forms.com/submit", {
+      const response = await fetch(WEB3FORMS_ENDPOINT, {
         method: "POST",
         body: web3FormData,
       });

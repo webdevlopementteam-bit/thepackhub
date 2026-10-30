@@ -3,6 +3,7 @@ import "./globals.css";
 import NavBar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FloatingChat from "@/sections/FloatingChat";
+import EnquiryPopup from "@/sections/EnquiryPopup";
 import Breadcrumb from "@/components/Breadcrumb";
 
 const geistSans = Geist({
@@ -39,6 +40,7 @@ export default function RootLayout({ children }) {
         {children}
         <Footer />
         <FloatingChat />
+        <EnquiryPopup />
       </body>
     </html>
   );
