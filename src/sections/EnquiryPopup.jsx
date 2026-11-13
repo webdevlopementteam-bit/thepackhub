@@ -4,10 +4,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
 import { Send, X } from "lucide-react";
 import { z } from "zod";
-import {
-  WEB3FORMS_ACCESS_KEY,
-  WEB3FORMS_ENDPOINT,
-} from "@/app/lib/web3forms";
+import { submitToWeb3Forms } from "@/app/lib/web3forms";
 
 /* =========================================================
    TIMING
@@ -170,23 +167,15 @@ export default function EnquiryPopup() {
     setSubmitting(true);
 
     try {
-      const web3FormData = new FormData();
-
-      web3FormData.append("access_key", WEB3FORMS_ACCESS_KEY);
-      web3FormData.append("name", values.name);
-      web3FormData.append("email", values.email);
-      web3FormData.append("phone", values.mobile);
-      web3FormData.append("message", values.message || "-");
-      web3FormData.append("page", window.location.href);
-      web3FormData.append("subject", "New Popup Enquiry - The Pack Hub");
-      web3FormData.append("from_name", "The Pack Hub Website");
-
-      const response = await fetch(WEB3FORMS_ENDPOINT, {
-        method: "POST",
-        body: web3FormData,
+      const result = await submitToWeb3Forms({
+        name: values.name,
+        email: values.email,
+        phone: values.mobile,
+        message: values.message || "-",
+        page: window.location.href,
+        subject: "New Popup Enquiry - The Pack Hub",
+        from_name: "The Pack Hub Website",
       });
-
-      const result = await response.json();
 
       if (result.success) {
         rememberSubmitted();
